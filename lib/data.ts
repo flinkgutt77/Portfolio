@@ -61,12 +61,10 @@ export const galleryItems: GalleryItem[] = [
   // Ads
   { id: 'a1', src: '/Advertisment/ad-1.jpg', alt: 'Advertisement', category: 'ads', width: 800, height: 600 },
   { id: 'a2', src: '/Advertisment/ad-2.jpg', alt: 'Advertisement', category: 'ads', width: 800, height: 1000 },
-  // Signage — professional web images
-  { id: 's1', src: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=85', alt: 'Digital signage screens in modern retail space', category: 'signage', width: 1200, height: 800 },
-  { id: 's2', src: 'https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=1200&q=85', alt: 'Professional business signage board', category: 'signage', width: 1200, height: 900 },
-  { id: 's3', src: 'https://images.unsplash.com/photo-1563461661026-49631dd5d68e?w=1200&q=85', alt: 'Large format digital display installation', category: 'signage', width: 1200, height: 800 },
-  { id: 's4', src: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=85', alt: 'LED billboard advertising screen', category: 'signage', width: 1200, height: 900 },
-  { id: 's5', src: 'https://images.unsplash.com/photo-1535016120720-40c646be5580?w=1200&q=85', alt: 'Indoor digital display screens', category: 'signage', width: 1200, height: 800 },
+  // Signage — restaurant / bar / takeaway digital screens
+  { id: 's1', src: 'https://images.unsplash.com/photo-1548115737-93977f7179e8?w=1200&q=85', alt: 'Restaurant food court digital menu boards and signage', category: 'signage', width: 1200, height: 800 },
+  { id: 's2', src: 'https://images.unsplash.com/photo-1759696302352-f20e19869be2?w=1200&q=85', alt: 'Fast food restaurant counter with digital menu display', category: 'signage', width: 1200, height: 900 },
+  { id: 's3', src: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=85', alt: 'Digital signage screens for bar and hospitality venues', category: 'signage', width: 1200, height: 800 },
   // Films — YouTube thumbnails
   { id: 'f3', src: 'https://img.youtube.com/vi/yvAhdVdjIxY/maxresdefault.jpg', alt: 'Highlights Reel', category: 'films', width: 1280, height: 720, videoId: 'yvAhdVdjIxY' },
 ]
