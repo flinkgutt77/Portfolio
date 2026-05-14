@@ -38,6 +38,32 @@ export type GalleryItem = {
 }
 
 export const galleryItems: GalleryItem[] = [
+  // Weddings
+  { id: 'w1', src: '/Wedding/wedding-1.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 1000 },
+  { id: 'w2', src: '/Wedding/wedding-2.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 600 },
+  { id: 'w3', src: '/Wedding/wedding-3.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 800 },
+  { id: 'w4', src: '/Wedding/wedding-4.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 600 },
+  { id: 'w5', src: '/Wedding/wedding-5.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 1000 },
+  { id: 'w6', src: '/Wedding/wedding-6.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 600 },
+  // Birthdays
+  { id: 'b1', src: '/Birthday/birthday-1.jpg', alt: 'Birthday', category: 'birthdays', width: 800, height: 600 },
+  { id: 'b2', src: '/Birthday/birthday-2.jpg', alt: 'Birthday', category: 'birthdays', width: 800, height: 1000 },
+  { id: 'b3', src: '/Birthday/birthday-3.jpg', alt: 'Birthday', category: 'birthdays', width: 800, height: 600 },
+  // Portraits
+  { id: 'p1', src: '/Portrait/portrait-1.jpg', alt: 'Portrait', category: 'portraits', width: 800, height: 1000 },
+  { id: 'p2', src: '/Portrait/portrait-2.jpg', alt: 'Portrait', category: 'portraits', width: 800, height: 600 },
+  { id: 'p3', src: '/Portrait/portrait-3.jpg', alt: 'Portrait', category: 'portraits', width: 800, height: 1000 },
+  { id: 'p4', src: '/Portrait/portrait-4.jpg', alt: 'Portrait', category: 'portraits', width: 800, height: 600 },
+  { id: 'p5', src: '/Portrait/portrait-5.jpg', alt: 'Portrait', category: 'portraits', width: 800, height: 800 },
+  // Fashion
+  { id: 'fa1', src: '/Fashion/fashion-1.jpg', alt: 'Fashion', category: 'fashion', width: 800, height: 1000 },
+  { id: 'fa2', src: '/Fashion/fashion-2.jpg', alt: 'Fashion', category: 'fashion', width: 800, height: 600 },
+  { id: 'fa3', src: '/Fashion/fashion-3.jpg', alt: 'Fashion', category: 'fashion', width: 800, height: 1000 },
+  { id: 'fa4', src: '/Fashion/fashion-4.jpg', alt: 'Fashion', category: 'fashion', width: 800, height: 600 },
+  { id: 'fa5', src: '/Fashion/fashion-5.jpg', alt: 'Fashion', category: 'fashion', width: 800, height: 800 },
+  // Ads
+  { id: 'a1', src: '/Advertisment/ad-1.jpg', alt: 'Advertisement', category: 'ads', width: 800, height: 600 },
+  { id: 'a2', src: '/Advertisment/ad-2.jpg', alt: 'Advertisement', category: 'ads', width: 800, height: 1000 },
   // Films — YouTube thumbnails
   { id: 'f3', src: 'https://img.youtube.com/vi/yvAhdVdjIxY/maxresdefault.jpg', alt: 'Highlights Reel', category: 'films', width: 1280, height: 720, videoId: 'yvAhdVdjIxY' },
 ]
