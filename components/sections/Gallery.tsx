@@ -54,10 +54,11 @@ export default function Gallery() {
       {/* Masonry Grid */}
       <div className="max-w-7xl mx-auto columns-1 sm:columns-2 lg:columns-3 gap-4">
         {filtered.map((item, index) => (
-          <div
+          <button
             key={item.id}
-            className="break-inside-avoid mb-4"
+            className="break-inside-avoid mb-4 w-full text-left"
             onClick={() => handleImageClick(index)}
+            aria-label={`View ${item.alt} in lightbox`}
           >
             <Image
               src={item.src}
@@ -66,7 +67,7 @@ export default function Gallery() {
               height={item.height}
               className="w-full h-auto object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200 rounded-sm"
             />
-          </div>
+          </button>
         ))}
       </div>
 
@@ -76,6 +77,7 @@ export default function Gallery() {
         close={() => setOpen(false)}
         slides={filtered.map(item => ({ src: item.src }))}
         index={currentIndex}
+        on={{ view: ({ index }) => setCurrentIndex(index) }}
       />
     </section>
   )
