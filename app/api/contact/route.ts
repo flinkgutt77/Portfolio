@@ -35,6 +35,22 @@ export async function POST(req: NextRequest) {
     // 2. Send confirmation email to client via Resend
     if (process.env.RESEND_API_KEY) {
       const resend = new Resend(process.env.RESEND_API_KEY)
+      // Send inquiry notification to owner (always works on free plan)
+      await resend.emails.send({
+        from: 'UJ Studio Portfolio <onboarding@resend.dev>',
+        to: 'flinkgutt11@gmail.com',
+        subject: `📸 New Inquiry from ${name} — ${service || 'General'}`,
+        html: `<div style="font-family:Arial,sans-serif;padding:20px;background:#0a0a0a;color:#f5f0e8;">
+          <h2 style="color:#c9a96e;">New Portfolio Inquiry</h2>
+          <p><b>Name:</b> ${name}</p>
+          <p><b>Email:</b> ${email}</p>
+          <p><b>Phone:</b> ${phone || 'Not provided'}</p>
+          <p><b>Service:</b> ${service || 'Not specified'}</p>
+          <p><b>Message:</b><br/>${message.replace(/\n/g, '<br/>')}</p>
+          <p style="color:#888;font-size:12px;">Submitted: ${submittedAt}</p>
+        </div>`,
+      }).catch(() => {})
+      // Also send confirmation to client
       await resend.emails.send({
         from: 'UJ Studio Norge <onboarding@resend.dev>',
         to: email,
