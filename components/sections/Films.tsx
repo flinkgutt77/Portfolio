@@ -1,4 +1,5 @@
 import { Camera, Film } from 'lucide-react'
+import FadeIn from '@/components/ui/FadeIn'
 
 const filmCards = [
   { title: 'Product Launch Campaign', client: 'Client: Fashion Brand', year: '2024' },
@@ -10,7 +11,7 @@ export default function Films() {
   return (
     <section id="films" className="bg-surface py-24 px-6">
       {/* Header */}
-      <div className="text-center mb-16">
+      <FadeIn className="text-center mb-16">
         <p className="text-xs tracking-widest uppercase text-gold">CINEMATOGRAPHY</p>
         <h2 className="font-serif text-4xl md:text-5xl text-text-primary mt-4">
           Advertisement Films
@@ -19,7 +20,7 @@ export default function Films() {
         <p className="text-text-muted text-center max-w-xl mx-auto mt-4">
           Cinematic brand stories that captivate, connect, and convert.
         </p>
-      </div>
+      </FadeIn>
 
       {/* Showreel Embed */}
       <div className="max-w-4xl mx-auto mb-16">

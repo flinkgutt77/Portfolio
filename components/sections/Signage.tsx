@@ -1,16 +1,17 @@
 import { LayoutDashboard, Monitor } from 'lucide-react'
+import FadeIn from '@/components/ui/FadeIn'
 
 export default function Signage() {
   return (
     <section id="signage" className="bg-background py-24 px-6">
       {/* Header */}
-      <div className="text-center mb-16">
+      <FadeIn className="text-center mb-16">
         <p className="text-xs tracking-widest uppercase text-gold">SIGNAGE &amp; DISPLAY</p>
         <h2 className="font-serif text-4xl md:text-5xl text-text-primary mt-4">
           Signage Solutions
         </h2>
         <div className="w-16 h-px bg-gold mx-auto mt-6" />
-      </div>
+      </FadeIn>
 
       {/* Two-column cards */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">

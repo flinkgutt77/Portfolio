@@ -1,4 +1,5 @@
 import { Bot, TrendingUp, Users } from 'lucide-react'
+import FadeIn from '@/components/ui/FadeIn'
 
 const useCases = [
   {
@@ -25,7 +26,7 @@ export default function AiAgents() {
   return (
     <section id="ai-agents" className="bg-surface py-24 px-6">
       {/* Header */}
-      <div className="text-center mb-16">
+      <FadeIn className="text-center mb-16">
         <p className="text-xs tracking-widest uppercase text-gold">AI AUTOMATION</p>
         <h2 className="font-serif text-4xl md:text-5xl text-text-primary mt-4">
           Automate. Integrate. Scale.
@@ -35,7 +36,7 @@ export default function AiAgents() {
           Leverage AI agent workflows to eliminate repetitive tasks, streamline client management,
           and scale your operations without scaling your team.
         </p>
-      </div>
+      </FadeIn>
 
       {/* Use-Case Cards */}
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">

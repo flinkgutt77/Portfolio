@@ -1,6 +1,7 @@
 'use client'
 
 import { testimonials } from '@/lib/data'
+import FadeIn from '@/components/ui/FadeIn'
 
 export default function Testimonials() {
   const doubled = [...testimonials, ...testimonials]
@@ -15,11 +16,11 @@ export default function Testimonials() {
       `}</style>
 
       {/* Header */}
-      <div className="text-center mb-12">
+      <FadeIn className="text-center mb-12">
         <p className="text-xs tracking-widest uppercase text-gold">TESTIMONIALS</p>
         <h2 className="font-serif text-4xl md:text-5xl text-text-primary mt-4">What Clients Say</h2>
         <div className="w-16 h-px bg-gold mx-auto mt-6" />
-      </div>
+      </FadeIn>
 
       {/* Marquee */}
       <div className="overflow-hidden">

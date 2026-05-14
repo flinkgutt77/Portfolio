@@ -1,4 +1,5 @@
 import { Camera } from 'lucide-react'
+import FadeIn from '@/components/ui/FadeIn'
 
 const stats = [
   { value: '5+', label: 'Years Experience' },
@@ -9,6 +10,7 @@ const stats = [
 export default function About() {
   return (
     <section id="about" className="bg-background py-24 px-6">
+      <FadeIn>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         {/* Left — Portrait placeholder */}
         <div>
@@ -48,6 +50,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      </FadeIn>
     </section>
   )
 }

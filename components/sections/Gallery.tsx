@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import { galleryItems, galleryCategories } from '@/lib/data'
+import FadeIn from '@/components/ui/FadeIn'
 
 export default function Gallery() {
   const [activeFilter, setActiveFilter] = useState('All')
@@ -26,13 +27,13 @@ export default function Gallery() {
   return (
     <section id="gallery" className="bg-background py-24 px-6">
       {/* Header */}
-      <div className="text-center mb-12">
+      <FadeIn className="text-center mb-12">
         <p className="text-xs tracking-widest uppercase text-gold">PORTFOLIO</p>
         <h2 className="font-serif text-4xl md:text-5xl text-text-primary mt-4">
           My Work
         </h2>
         <div className="w-16 h-px bg-gold mx-auto mt-6" />
-      </div>
+      </FadeIn>
 
       {/* Filter Tabs */}
       <div className="flex flex-row gap-2 flex-wrap justify-center mb-10">
