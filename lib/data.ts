@@ -65,12 +65,10 @@ export const galleryItems: GalleryItem[] = [
   { id: 's1', src: 'https://images.unsplash.com/photo-1548115737-93977f7179e8?w=1200&q=85', alt: 'Restaurant food court digital menu boards and signage', category: 'signage', width: 1200, height: 800 },
   { id: 's2', src: 'https://images.unsplash.com/photo-1759696302352-f20e19869be2?w=1200&q=85', alt: 'Fast food restaurant counter with digital menu display', category: 'signage', width: 1200, height: 900 },
   { id: 's3', src: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=85', alt: 'Digital signage screens for bar and hospitality venues', category: 'signage', width: 1200, height: 800 },
-  // Films — YouTube thumbnails
-  { id: 'f3', src: 'https://img.youtube.com/vi/yvAhdVdjIxY/maxresdefault.jpg', alt: 'Highlights Reel', category: 'films', width: 1280, height: 720, videoId: 'yvAhdVdjIxY' },
 ]
 
 // Gallery filter categories
-export const galleryCategories = ['All', 'Weddings', 'Birthdays', 'Portraits', 'Fashion', 'Ads', 'Signage', 'Films']
+export const galleryCategories = ['All', 'Weddings', 'Birthdays', 'Portraits', 'Fashion', 'Ads', 'Signage']
 
 // Testimonials
 export type Testimonial = {
