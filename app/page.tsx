@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Hero from '@/components/sections/Hero'
+import Services from '@/components/sections/Services'
 
 export default function Home() {
   return (
@@ -8,9 +9,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <div id="services" className="py-24 bg-surface">
-          <p className="text-center text-text-muted">Services — coming soon</p>
-        </div>
+        <Services />
         <div id="gallery" className="py-24 bg-background">
           <p className="text-center text-text-muted">Gallery — coming soon</p>
         </div>
