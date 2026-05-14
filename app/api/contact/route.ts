@@ -22,7 +22,15 @@ export async function POST(req: NextRequest) {
         'ngrok-skip-browser-warning': 'true',
       },
       body: JSON.stringify({ name, email, phone: phone || '', service: service || 'Not specified', message, submittedAt }),
-    }).catch(() => {}) // Don't block if n8n is down
+    }).catch(() => {})
+
+    // 2. Send WhatsApp via CallMeBot (directly from Vercel to avoid IP blocks)
+    const waText = encodeURIComponent(
+      `📸 New Portfolio Inquiry!\n\n👤 Name: ${name}\n📧 Email: ${email}\n📱 Phone: ${phone || 'Not provided'}\n🎯 Service: ${service || 'Not specified'}\n\n💬 Message:\n${message}\n\n🌐 ujstudionorge.com`
+    )
+    await fetch(
+      `https://api.callmebot.com/whatsapp.php?phone=4792819510&apikey=8615285&text=${waText}`
+    ).catch(() => {})
 
     // 2. Send confirmation email to client via Resend
     if (process.env.RESEND_API_KEY) {
