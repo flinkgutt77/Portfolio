@@ -83,7 +83,7 @@ export const testimonials: Testimonial[] = [
   { id: 't2', quote: 'The product shots for our ad campaign exceeded expectations. Sales went up 40% after launch.', name: 'Nadia Khan', service: 'Ad Photography' },
   { id: 't3', quote: 'Our digital signage system has transformed how customers engage with our brand.', name: 'Tariq Enterprises', service: 'Digital Signage' },
   { id: 't4', quote: "The birthday photos made my daughter's party feel like a magazine shoot. Absolutely magical.", name: 'Fatima Malik', service: 'Birthday Photography' },
-  { id: 't5', quote: 'The AI workflow Umar set up saved us 15 hours a week on client onboarding alone.', name: 'Bilal & Co.', service: 'AI Agent Workflows' },
+  { id: 't5', quote: 'The signage screens Umar designed and installed for our restaurant have completely transformed how customers engage with our menu. Absolutely worth every penny.', name: 'Hassan Restaurants', service: 'Digital Signage' },
 ]
 
 // Social links
