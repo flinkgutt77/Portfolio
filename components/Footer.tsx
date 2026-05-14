@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { navLinks, socialLinks } from '@/lib/data'
 
 // Inline SVG icons for social platforms (lucide-react v1+ removed brand icons)
@@ -44,19 +43,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 flex flex-col gap-8">
         {/* Top row: logo + socials */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-          <a href="#" className="flex items-center gap-3 group">
-            <Image
-              src="/C-2.png"
-              alt="UJ Studio Norge"
-              width={52}
-              height={52}
-              className="object-contain"
-              style={{ filter: 'invert(76%) sepia(55%) saturate(400%) hue-rotate(5deg) brightness(1.05)', mixBlendMode: 'screen' }}
-            />
-            <div className="flex flex-col leading-none">
-              <span className="font-serif text-lg text-text-primary tracking-widest">UJ STUDIO</span>
-              <span className="text-[10px] tracking-[0.45em] uppercase text-gold mt-0.5">Norge</span>
-            </div>
+          <a href="#" className="flex flex-col leading-none">
+            <span className="font-serif text-xl text-gold tracking-widest">UJ STUDIO</span>
+            <span className="text-[10px] tracking-[0.45em] uppercase text-text-muted mt-0.5">Norge</span>
           </a>
           <div className="flex items-center gap-5">
             {socialLinks.map((social) => (
