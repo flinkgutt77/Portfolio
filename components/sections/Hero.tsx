@@ -49,13 +49,13 @@ export default function Hero() {
         <div className="flex items-center justify-center gap-4 mt-10 flex-wrap">
           <a
             href="#gallery"
-            className="border border-gold text-gold hover:bg-gold hover:text-background px-8 py-3 transition-all duration-300 text-sm tracking-widest uppercase"
+            className="border border-gold text-gold hover:bg-gold hover:text-background px-8 py-3 transition-all duration-300 text-sm tracking-widest uppercase focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-2"
           >
             View Portfolio
           </a>
           <a
             href="#contact"
-            className="border border-border text-text-muted hover:border-gold hover:text-gold px-8 py-3 transition-all duration-300 text-sm tracking-widest uppercase"
+            className="border border-border text-text-muted hover:border-gold hover:text-gold px-8 py-3 transition-all duration-300 text-sm tracking-widest uppercase focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-2"
           >
             Get in Touch
           </a>
@@ -63,7 +63,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+      <div aria-hidden="true" className="absolute bottom-8 left-1/2 -translate-x-1/2">
         <ChevronDown className="text-gold opacity-60 animate-bounce" size={28} />
       </div>
     </section>
