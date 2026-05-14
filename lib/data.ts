@@ -79,8 +79,7 @@ export const testimonials: Testimonial[] = [
 
 // Social links
 export const socialLinks = [
-  { label: 'Instagram', href: 'https://instagram.com', icon: 'Instagram' },
-  { label: 'Facebook', href: 'https://facebook.com', icon: 'Facebook' },
-  { label: 'YouTube', href: 'https://youtube.com', icon: 'Youtube' },
-  { label: 'LinkedIn', href: 'https://linkedin.com', icon: 'Linkedin' },
+  { label: 'Instagram', href: 'https://instagram.com/ujstudionorge', icon: 'Instagram' },
+  { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61567685248522', icon: 'Facebook' },
+  { label: 'YouTube', href: 'https://youtube.com/@ujstudio', icon: 'Youtube' },
 ]
