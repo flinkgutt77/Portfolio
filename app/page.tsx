@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Hero from '@/components/sections/Hero'
 import Services from '@/components/sections/Services'
+import Gallery from '@/components/sections/Gallery'
 
 export default function Home() {
   return (
@@ -10,9 +11,7 @@ export default function Home() {
       <main>
         <Hero />
         <Services />
-        <div id="gallery" className="py-24 bg-background">
-          <p className="text-center text-text-muted">Gallery — coming soon</p>
-        </div>
+        <Gallery />
         <div id="films" className="py-24 bg-surface">
           <p className="text-center text-text-muted">Films — coming soon</p>
         </div>
