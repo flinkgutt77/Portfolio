@@ -1,14 +1,13 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Hero from '@/components/sections/Hero'
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <main>
-        <div id="hero" className="min-h-screen bg-background flex items-center justify-center">
-          <p className="text-text-muted">Hero — coming soon</p>
-        </div>
+        <Hero />
         <div id="services" className="py-24 bg-surface">
           <p className="text-center text-text-muted">Services — coming soon</p>
         </div>
