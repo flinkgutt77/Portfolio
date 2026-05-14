@@ -43,7 +43,7 @@ export const galleryItems: GalleryItem[] = [
 ]
 
 // Gallery filter categories
-export const galleryCategories = ['Films']
+export const galleryCategories = ['All', 'Weddings', 'Birthdays', 'Portraits', 'Fashion', 'Ads', 'Signage', 'Films']
 
 // Testimonials
 export type Testimonial = {
