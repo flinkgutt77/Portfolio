@@ -108,9 +108,9 @@ export default function Signage() {
       {/* Stats bar */}
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-px bg-border mb-16">
         {[
-          { number: '50+', label: 'Screens Installed' },
-          { number: '30+', label: 'Brands Served' },
-          { number: '5+', label: 'Years Experience' },
+          { number: '10+', label: 'Years Experience' },
+          { number: 'Custom', label: 'Design & Branding' },
+          { number: 'Indoor', label: 'Outdoor Signage' },
           { number: '24/7', label: 'Content Support' },
         ].map((stat) => (
           <div key={stat.label} className="bg-surface px-8 py-10 text-center">
