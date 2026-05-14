@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { Resend } from 'resend'
+
+const N8N_WEBHOOK_URL = process.env.N8N_WEBHOOK_URL ||
+  'https://mortified-upright-oops.ngrok-free.dev/webhook-test/681061ad-aedf-46ab-ae07-83b34d778bc9'
 
 export async function POST(req: NextRequest) {
   try {
@@ -9,22 +11,22 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY)
-
-    await resend.emails.send({
-      from: 'Portfolio Contact <onboarding@resend.dev>',
-      to: 'flinkgutt11@gmail.com',
-      subject: `New inquiry from ${name} — ${service || 'General'}`,
-      html: `
-        <h2>New Portfolio Inquiry</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-        <p><strong>Service:</strong> ${service || 'Not specified'}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, '<br/>')}</p>
-      `,
+    const response = await fetch(N8N_WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name,
+        email,
+        phone: phone || '',
+        service: service || 'Not specified',
+        message,
+        submittedAt: new Date().toISOString(),
+      }),
     })
+
+    if (!response.ok) {
+      throw new Error(`n8n webhook responded with ${response.status}`)
+    }
 
     return NextResponse.json({ success: true })
   } catch (error) {
