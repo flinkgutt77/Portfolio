@@ -1,0 +1,208 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - generic [ref=e9]:
+            - link "Umar Javed's projects Hobby" [ref=e10] [cursor=pointer]:
+              - /url: /umar-javed-s-projects
+              - img [ref=e11]
+              - generic [ref=e12]:
+                - generic [ref=e13]: Umar Javed's projects
+                - generic [ref=e15]: Hobby
+            - button [ref=e16] [cursor=pointer]:
+              - img [ref=e18]
+          - button "Find… F" [ref=e21]:
+            - generic [ref=e23]:
+              - img [ref=e25]
+              - generic [ref=e27]: Find…
+              - generic [ref=e29]: F
+        - navigation [ref=e31]:
+          - generic [ref=e32]:
+            - generic:
+              - generic:
+                - link "Overview":
+                  - /url: /umar-javed-s-projects/portfolio
+                  - generic:
+                    - generic: Overview
+                - link "Deployments":
+                  - /url: /umar-javed-s-projects/portfolio/deployments
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Deployments
+                - link "Logs":
+                  - /url: /umar-javed-s-projects/portfolio/logs
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Logs
+                - link "Analytics":
+                  - /url: /umar-javed-s-projects/portfolio/analytics
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Analytics
+                - link "Speed Insights":
+                  - /url: /umar-javed-s-projects/portfolio/speed-insights
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Speed Insights
+                - link "Observability":
+                  - /url: /umar-javed-s-projects/portfolio/observability
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Observability
+                  - generic:
+                    - img
+                - link "Firewall":
+                  - /url: /umar-javed-s-projects/portfolio/firewall
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Firewall
+                  - generic:
+                    - img
+                - link "CDN":
+                  - /url: /umar-javed-s-projects/portfolio/cdn
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: CDN
+                  - generic:
+                    - img
+                - separator
+                - link "Environment Variables":
+                  - /url: /umar-javed-s-projects/portfolio/settings/environment-variables
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Environment Variables
+                - link "Domains":
+                  - /url: /umar-javed-s-projects/portfolio/settings/domains
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Domains
+                - link "Integrations":
+                  - /url: /umar-javed-s-projects/portfolio/settings/integrations
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Integrations
+                - link "Storage":
+                  - /url: /umar-javed-s-projects/portfolio/stores
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Storage
+                - link "Flags":
+                  - /url: /umar-javed-s-projects/portfolio/flags
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Flags
+                  - generic:
+                    - img
+                - link "Agent":
+                  - /url: /umar-javed-s-projects/portfolio/agent
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Agent
+                  - generic:
+                    - img
+                - link "AI Gateway":
+                  - /url: /umar-javed-s-projects/portfolio/ai-gateway
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: AI Gateway
+                  - generic:
+                    - img
+                - link "Sandboxes":
+                  - /url: /umar-javed-s-projects/portfolio/sandboxes
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Sandboxes
+                - link "Workflows":
+                  - /url: /umar-javed-s-projects/portfolio/workflows
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Workflows
+                - separator
+                - link "Usage":
+                  - /url: /umar-javed-s-projects/portfolio/usage
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Usage
+                - link "Support":
+                  - /url: /umar-javed-s-projects/portfolio/support
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Support
+                - link "Settings":
+                  - /url: /umar-javed-s-projects/portfolio/settings
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Settings
+                  - generic:
+                    - img
+            - generic [ref=e33]:
+              - button "Firewall" [ref=e35] [cursor=pointer]:
+                - img [ref=e37]
+                - generic [ref=e39]: Firewall
+              - generic [ref=e41]:
+                - link "Overview" [ref=e42] [cursor=pointer]:
+                  - /url: /umar-javed-s-projects/portfolio/firewall
+                  - img [ref=e44]
+                  - generic [ref=e47]: Overview
+                - link "Traffic" [ref=e48] [cursor=pointer]:
+                  - /url: /umar-javed-s-projects/portfolio/firewall/traffic
+                  - img [ref=e50]
+                  - generic [ref=e53]: Traffic
+                - link "Rules" [ref=e54] [cursor=pointer]:
+                  - /url: /umar-javed-s-projects/portfolio/firewall/rules
+                  - img [ref=e56]
+                  - generic [ref=e60]: Rules
+                - link "Audit Log" [ref=e61] [cursor=pointer]:
+                  - /url: /umar-javed-s-projects/portfolio/firewall/audit-log
+                  - img [ref=e63]
+                  - generic [ref=e66]: Audit Log
+        - generic [ref=e69]:
+          - button "Avatar for flinkgutt11-8789 Umar Javed" [ref=e70] [cursor=pointer]:
+            - img "Avatar for flinkgutt11-8789" [ref=e71]:
+              - img "Avatar for flinkgutt11-8789" [ref=e72]
+            - generic [ref=e74]: Umar Javed
+            - img [ref=e76]
+          - img [ref=e80]
+      - button [ref=e83] [cursor=pointer]:
+        - img [ref=e84]
+    - generic [ref=e88]:
+      - generic [ref=e91]:
+        - link "portfolio" [ref=e92] [cursor=pointer]:
+          - /url: /umar-javed-s-projects/portfolio
+          - generic [ref=e95]: portfolio
+        - button [ref=e96] [cursor=pointer]:
+          - img [ref=e98]
+        - link "Back to team view" [ref=e102] [cursor=pointer]:
+          - /url: /umar-javed-s-projects/~/firewall
+          - img [ref=e104]
+      - generic [ref=e108]: Firewall
+      - button "Open page actions menu" [ref=e110] [cursor=pointer]:
+        - img [ref=e112]
+  - alert [ref=e116]
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img

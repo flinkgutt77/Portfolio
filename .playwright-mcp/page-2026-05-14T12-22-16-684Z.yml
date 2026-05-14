@@ -1,0 +1,340 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - generic [ref=e9]:
+            - link "Umar Javed's projects Hobby" [ref=e10] [cursor=pointer]:
+              - /url: /umar-javed-s-projects
+              - img [ref=e11]
+              - generic [ref=e12]:
+                - generic [ref=e13]: Umar Javed's projects
+                - generic [ref=e15]: Hobby
+            - button [ref=e16] [cursor=pointer]:
+              - img [ref=e18]
+          - button "Find… F" [ref=e21]:
+            - generic [ref=e23]:
+              - img [ref=e25]
+              - generic [ref=e27]: Find…
+              - generic [ref=e29]: F
+        - navigation [ref=e31]:
+          - generic [ref=e34]:
+            - link "Other Overview" [ref=e35] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio
+              - img "Other" [ref=e37]:
+                - img "Other" [ref=e38]
+              - generic [ref=e40]: Overview
+            - link "Deployments" [ref=e41] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/deployments
+              - img [ref=e43]
+              - generic [ref=e46]: Deployments
+            - link "Logs" [ref=e47] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/logs
+              - img [ref=e49]
+              - generic [ref=e52]: Logs
+            - link "Analytics" [ref=e53] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/analytics
+              - img [ref=e55]
+              - generic [ref=e58]: Analytics
+            - link "Speed Insights" [ref=e59] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/speed-insights
+              - img [ref=e61]
+              - generic [ref=e64]: Speed Insights
+            - link "Observability" [ref=e65] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/observability
+              - img [ref=e67]
+              - generic [ref=e70]: Observability
+              - img [ref=e72]
+            - link "Firewall" [ref=e74] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/firewall
+              - img [ref=e76]
+              - generic [ref=e80]: Firewall
+              - img [ref=e82]
+            - link "CDN" [ref=e84] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/cdn
+              - img [ref=e86]
+              - generic [ref=e89]: CDN
+              - img [ref=e91]
+            - separator [ref=e93]
+            - link "Environment Variables" [ref=e94] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/settings/environment-variables
+              - img [ref=e96]
+              - generic [ref=e99]: Environment Variables
+            - link "Domains" [ref=e100] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/settings/domains
+              - img [ref=e102]
+              - generic [ref=e105]: Domains
+            - link "Integrations" [ref=e106] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/settings/integrations
+              - img [ref=e108]
+              - generic [ref=e111]: Integrations
+            - link "Storage" [ref=e112] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/stores
+              - img [ref=e114]
+              - generic [ref=e117]: Storage
+            - link "Flags" [ref=e118] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/flags
+              - img [ref=e120]
+              - generic [ref=e123]: Flags
+              - img [ref=e125]
+            - link "Agent" [ref=e127] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/agent
+              - img [ref=e129]
+              - generic [ref=e132]: Agent
+              - img [ref=e134]
+            - link "AI Gateway" [ref=e136] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/ai-gateway
+              - img [ref=e138]
+              - generic [ref=e141]: AI Gateway
+              - img [ref=e143]
+            - link "Sandboxes" [ref=e145] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/sandboxes
+              - img [ref=e147]
+              - generic [ref=e150]: Sandboxes
+            - link "Workflows" [ref=e151] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/workflows
+              - img [ref=e153]
+              - generic [ref=e156]: Workflows
+            - separator [ref=e157]
+            - link "Usage" [ref=e158] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/usage
+              - img [ref=e160]
+              - generic [ref=e163]: Usage
+            - link "Support" [ref=e164] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/support
+              - img [ref=e166]
+              - generic [ref=e169]: Support
+            - link "Settings" [ref=e170] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/settings
+              - img [ref=e172]
+              - generic [ref=e175]: Settings
+              - img [ref=e177]
+        - generic [ref=e181]:
+          - button "Avatar for flinkgutt11-8789 Umar Javed" [ref=e182] [cursor=pointer]:
+            - img "Avatar for flinkgutt11-8789" [ref=e183]:
+              - img "Avatar for flinkgutt11-8789" [ref=e184]
+            - generic [ref=e186]: Umar Javed
+            - img [ref=e188]
+          - button "notifications" [ref=e192] [cursor=pointer]:
+            - generic [ref=e194]:
+              - img
+      - button [ref=e196] [cursor=pointer]:
+        - img [ref=e197]
+    - generic [ref=e200]:
+      - generic [ref=e201]:
+        - generic [ref=e204]:
+          - link "Other portfolio" [ref=e205] [cursor=pointer]:
+            - /url: /umar-javed-s-projects/portfolio
+            - img "Other" [ref=e206]:
+              - img "Other" [ref=e207]
+            - generic [ref=e209]: portfolio
+          - button [ref=e210] [cursor=pointer]:
+            - img [ref=e212]
+          - link "Back to team view" [ref=e216] [cursor=pointer]:
+            - /url: /umar-javed-s-projects/~/deployments
+            - img [ref=e218]
+        - generic [ref=e222]: Deployments
+        - button "Open page actions menu" [ref=e224] [cursor=pointer]:
+          - img [ref=e226]
+      - generic [ref=e231]:
+        - generic [ref=e232]:
+          - combobox [ref=e234]:
+            - generic [ref=e235]:
+              - generic:
+                - img
+              - searchbox "All Branches…" [ref=e236]
+              - button "Open menu" [ref=e237] [cursor=pointer]:
+                - img [ref=e238]
+          - combobox [ref=e241]:
+            - generic [ref=e242]:
+              - generic:
+                - img
+              - searchbox "All Authors…" [ref=e243]
+              - button "Open menu" [ref=e244] [cursor=pointer]:
+                - img [ref=e245]
+          - button "Menu" [ref=e249] [cursor=pointer]:
+            - generic [ref=e250]:
+              - generic [ref=e252]: All Environments
+              - img [ref=e254]
+          - button "Select Date Range" [ref=e259] [cursor=pointer]:
+            - img [ref=e261]
+            - generic [ref=e263]: Select Date Range
+          - generic [ref=e264]:
+            - button "Filter by deployment status. 5 of 6 statuses selected" [ref=e268] [cursor=pointer]:
+              - generic [ref=e269]:
+                - generic [ref=e275]: Status
+                - generic "5 of 6 statuses selected" [ref=e276]:
+                  - generic [ref=e277]: 5/6
+              - img [ref=e280]
+            - button "Deployments actions" [ref=e283] [cursor=pointer]:
+              - img [ref=e285]
+        - generic [ref=e289]:
+          - generic [ref=e291]:
+            - link [ref=e292] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/Ab4ZM2fbisdK1v48o72GTnfkHenh
+            - generic [ref=e294]:
+              - link "Ab4ZM2fbi" [ref=e297] [cursor=pointer]:
+                - /url: /umar-javed-s-projects/portfolio/Ab4ZM2fbisdK1v48o72GTnfkHenh
+                - paragraph [ref=e298]: Ab4ZM2fbi
+              - generic [ref=e300]: Production
+            - generic [ref=e302]:
+              - generic "This deployment is building." [ref=e304]:
+                - generic [ref=e308]: Building
+              - generic [ref=e323]: 1s
+            - generic [ref=e326]:
+              - generic [ref=e327]:
+                - img [ref=e328]
+                - link "main" [ref=e330] [cursor=pointer]:
+                  - /url: https://github.com/flinkgutt77/Portfolio/tree/main
+              - generic [ref=e331]:
+                - img [ref=e332]
+                - 'link "d60ce59 chore: trigger redeploy (repo now public)" [ref=e334] [cursor=pointer]':
+                  - /url: https://github.com/flinkgutt77/Portfolio/commit/d60ce59c5633cf372d548f13056349f65ebfd4ef
+                  - generic [ref=e335]: d60ce59
+                  - 'generic "chore: trigger redeploy (repo now public)" [ref=e336]'
+            - generic [ref=e337]:
+              - generic [ref=e339]:
+                - generic [ref=e341] [cursor=pointer]: Just now by flinkgutt11
+                - img "github/flinkgutt11" [ref=e347] [cursor=pointer]:
+                  - img "github/flinkgutt11" [ref=e348]
+              - button "Deployment Actions" [ref=e350] [cursor=pointer]:
+                - img [ref=e354]
+          - generic [ref=e357]:
+            - link [ref=e358] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/5BS9x2R7gThREuYmGkvUS6SZ2ax2
+            - generic [ref=e360]:
+              - link "5BS9x2R7g" [ref=e363] [cursor=pointer]:
+                - /url: /umar-javed-s-projects/portfolio/5BS9x2R7gThREuYmGkvUS6SZ2ax2
+                - paragraph [ref=e364]: 5BS9x2R7g
+              - generic [ref=e366]: Production
+            - generic [ref=e368]:
+              - generic "This deployment has been blocked." [ref=e370]:
+                - generic [ref=e374]: Blocked
+              - generic [ref=e378]: —
+            - generic [ref=e381]:
+              - generic [ref=e382]:
+                - img [ref=e383]
+                - link "main" [ref=e385] [cursor=pointer]:
+                  - /url: https://github.com/flinkgutt77/Portfolio/tree/main
+              - generic [ref=e386]:
+                - img [ref=e387]
+                - 'link "8a5be43 fix: switch to production n8n webhook URL" [ref=e389] [cursor=pointer]':
+                  - /url: https://github.com/flinkgutt77/Portfolio/commit/8a5be438dade7c07ab92bf7939db7577dc29d9d3
+                  - generic [ref=e390]: 8a5be43
+                  - 'generic "fix: switch to production n8n webhook URL" [ref=e391]'
+            - generic [ref=e392]:
+              - generic [ref=e394]:
+                - generic [ref=e396] [cursor=pointer]: 9m ago by flinkgutt11
+                - img "github/flinkgutt11" [ref=e402] [cursor=pointer]:
+                  - img "github/flinkgutt11" [ref=e403]
+              - button "Deployment Actions" [ref=e405] [cursor=pointer]:
+                - img [ref=e409]
+          - generic [ref=e412]:
+            - link [ref=e413] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/TUBgPu75Rc9hBSivGKtVnSPw915X
+            - generic [ref=e415]:
+              - link "TUBgPu75R" [ref=e418] [cursor=pointer]:
+                - /url: /umar-javed-s-projects/portfolio/TUBgPu75Rc9hBSivGKtVnSPw915X
+                - paragraph [ref=e419]: TUBgPu75R
+              - generic [ref=e421]: Production
+            - generic [ref=e423]:
+              - generic "This deployment has been blocked." [ref=e425]:
+                - generic [ref=e429]: Blocked
+              - generic [ref=e433]: —
+            - generic [ref=e436]:
+              - generic [ref=e437]:
+                - img [ref=e438]
+                - link "main" [ref=e440] [cursor=pointer]:
+                  - /url: https://github.com/flinkgutt77/Portfolio/tree/main
+              - generic [ref=e441]:
+                - img [ref=e442]
+                - 'link "524bf1a feat: replace Resend with n8n webhook for contact form submissions" [ref=e444] [cursor=pointer]':
+                  - /url: https://github.com/flinkgutt77/Portfolio/commit/524bf1a0b7c626fb65480c82fd6d707673f22637
+                  - generic [ref=e445]: 524bf1a
+                  - 'generic "feat: replace Resend with n8n webhook for contact form submissions" [ref=e446]'
+            - generic [ref=e447]:
+              - generic [ref=e449]:
+                - generic [ref=e451] [cursor=pointer]: 25m ago by flinkgutt11
+                - img "github/flinkgutt11" [ref=e457] [cursor=pointer]:
+                  - img "github/flinkgutt11" [ref=e458]
+              - button "Deployment Actions" [ref=e460] [cursor=pointer]:
+                - img [ref=e464]
+          - generic [ref=e467]:
+            - link [ref=e468] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/G978hKEcjoA7StiNa8V2E4ezLwEh
+            - generic [ref=e470]:
+              - link "G978hKEcj" [ref=e473] [cursor=pointer]:
+                - /url: /umar-javed-s-projects/portfolio/G978hKEcjoA7StiNa8V2E4ezLwEh
+                - paragraph [ref=e474]: G978hKEcj
+              - generic [ref=e476]:
+                - text: Production
+                - generic [ref=e479]:
+                  - img [ref=e481]
+                  - text: Current
+            - generic [ref=e484]:
+              - generic "This deployment is ready." [ref=e486]:
+                - generic [ref=e490]: Ready
+              - generic [ref=e494]: 31s
+            - generic [ref=e498]:
+              - img [ref=e500]
+              - generic [ref=e502]:
+                - text: Redeploy of
+                - link "39cwwTp3c" [ref=e503] [cursor=pointer]:
+                  - /url: /umar-javed-s-projects/portfolio/39cwwTp3cJJ89U93cA3CN2ctKevS
+                  - code [ref=e504]: 39cwwTp3c
+            - generic [ref=e505]:
+              - generic [ref=e507]:
+                - generic [ref=e509] [cursor=pointer]: 34m ago by flinkgutt11-8789
+                - img "flinkgutt11-8789 Avatar" [ref=e513] [cursor=pointer]:
+                  - img "flinkgutt11-8789 Avatar" [ref=e514]
+              - button "Deployment Actions" [ref=e516] [cursor=pointer]:
+                - img [ref=e520]
+          - generic [ref=e523]:
+            - link [ref=e524] [cursor=pointer]:
+              - /url: /umar-javed-s-projects/portfolio/39cwwTp3cJJ89U93cA3CN2ctKevS
+            - generic [ref=e526]:
+              - link "39cwwTp3c" [ref=e529] [cursor=pointer]:
+                - /url: /umar-javed-s-projects/portfolio/39cwwTp3cJJ89U93cA3CN2ctKevS
+                - paragraph [ref=e530]: 39cwwTp3c
+              - generic [ref=e532]:
+                - text: Production
+                - img [ref=e534]
+            - generic [ref=e537]:
+              - generic "This deployment is ready." [ref=e539]:
+                - generic [ref=e543]: Ready
+              - generic [ref=e547]: 31s
+            - generic [ref=e550]:
+              - generic [ref=e551]:
+                - img [ref=e552]
+                - link "main" [ref=e554] [cursor=pointer]:
+                  - /url: https://github.com/flinkgutt77/Portfolio/tree/main
+              - generic [ref=e555]:
+                - img [ref=e556]
+                - 'link "27a6f07 feat: add Framer Motion scroll animations and SEO metadata" [ref=e558] [cursor=pointer]':
+                  - /url: https://github.com/flinkgutt77/Portfolio/commit/27a6f071f93b421d5c750fd88557851e9613a14b
+                  - generic [ref=e559]: 27a6f07
+                  - 'generic "feat: add Framer Motion scroll animations and SEO metadata" [ref=e560]'
+            - generic [ref=e561]:
+              - generic [ref=e563]:
+                - generic [ref=e565] [cursor=pointer]: 38m ago by flinkgutt11
+                - img "github/flinkgutt11" [ref=e570] [cursor=pointer]:
+                  - img "github/flinkgutt11" [ref=e571]
+              - button "Deployment Actions" [ref=e573] [cursor=pointer]:
+                - img [ref=e577]
+        - generic [ref=e579]:
+          - paragraph [ref=e580]:
+            - text: Deployment Retention is enabled for this project — some deployments will be deleted after a set time period.
+            - link "Learn more" [ref=e581] [cursor=pointer]:
+              - /url: /docs/security/deployment-retention
+              - text: Learn more
+              - img [ref=e582]
+          - button "View Recently Deleted" [ref=e584] [cursor=pointer]:
+            - generic [ref=e585]: View Recently Deleted
+  - alert [ref=e587]
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img

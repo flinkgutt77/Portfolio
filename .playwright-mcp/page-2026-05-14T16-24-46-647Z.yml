@@ -1,0 +1,256 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [active] [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: "NO"
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - generic [ref=e25]:
+        - search [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - combobox "Search" [expanded] [ref=e30]: site:youtube.com ujstudio kubra asad
+              - button "Clear search query" [ref=e32] [cursor=pointer]
+            - button "Search" [ref=e37] [cursor=pointer]
+        - generic [ref=e40]:
+          - button "Search with your voice" [ref=e42] [cursor=pointer]
+          - tooltip "tooltip"
+      - generic [ref=e49]:
+        - button "Create" [ref=e52] [cursor=pointer]:
+          - generic [ref=e55]: Create
+        - generic [ref=e59]:
+          - button "Notifications" [ref=e61] [cursor=pointer]
+          - tooltip "tooltip"
+        - button "Account menu" [ref=e67]
+  - navigation [ref=e69]
+  - main [ref=e71]:
+    - generic [ref=e72]:
+      - generic [ref=e74]:
+        - tablist [ref=e79]:
+          - tab "All" [selected] [ref=e83] [cursor=pointer]:
+            - generic [ref=e85]: All
+          - tab "Shorts" [ref=e92] [cursor=pointer]:
+            - generic [ref=e94]: Shorts
+          - tab "Unwatched" [ref=e101] [cursor=pointer]:
+            - generic [ref=e103]: Unwatched
+          - tab "Watched" [ref=e110] [cursor=pointer]:
+            - generic [ref=e112]: Watched
+          - tab "Videos" [ref=e119] [cursor=pointer]:
+            - generic [ref=e121]: Videos
+          - tab "Recently uploaded" [ref=e128] [cursor=pointer]:
+            - generic [ref=e130]: Recently uploaded
+          - tab "Live" [ref=e137] [cursor=pointer]:
+            - generic [ref=e139]: Live
+        - link "About these results" [ref=e146] [cursor=pointer]:
+          - /url: https://www.youtube.com/howyoutubeworks/product-features/search/
+          - generic [ref=e147]: About these results
+        - generic [ref=e154]:
+          - button "Search filters" [ref=e156] [cursor=pointer]:
+            - generic [ref=e157]: Filters
+          - tooltip "tooltip"
+      - generic [ref=e168]:
+        - generic [ref=e170]:
+          - link [ref=e172] [cursor=pointer]:
+            - /url: /@umarjaved77
+          - link "UJStudio @umarjaved77•10 subscribers Photographer , Cinematographer , Content Creator , Podcast , Live Streaming." [ref=e176] [cursor=pointer]:
+            - /url: /@umarjaved77
+            - generic [ref=e177]:
+              - generic [ref=e181]: UJStudio
+              - generic [ref=e182]: "@umarjaved77•10 subscribers"
+              - generic [ref=e183]: Photographer , Cinematographer , Content Creator , Podcast , Live Streaming.
+        - generic [ref=e185]:
+          - link [ref=e187] [cursor=pointer]:
+            - /url: /watch?v=yvAhdVdjIxY&list=RDyvAhdVdjIxY&start_radio=1&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2FkoAcB
+          - generic [ref=e189] [cursor=pointer]:
+            - generic [ref=e190]:
+              - heading "Kubra & Asad 54 seconds" [level=3] [ref=e192]:
+                - link "Kubra & Asad 54 seconds" [ref=e193]:
+                  - /url: /watch?v=yvAhdVdjIxY&list=RDyvAhdVdjIxY&start_radio=1&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2FkoAcB
+                  - text: Kubra & Asad
+              - generic [ref=e196]:
+                - generic [ref=e197]: 7 views
+                - generic [ref=e198]: •5 years ago
+            - generic [ref=e199]:
+              - link "Go to channel UJStudio" [ref=e200]:
+                - /url: /@umarjaved77
+              - link "UJStudio" [ref=e205]:
+                - /url: /@umarjaved77
+        - generic [ref=e207]:
+          - heading "People also watched" [level=2] [ref=e210]:
+            - generic [ref=e212]: People also watched
+          - generic [ref=e214]:
+            - generic [ref=e215]:
+              - generic [ref=e217]:
+                - link [ref=e219] [cursor=pointer]:
+                  - /url: /watch?v=R_PvTIQV3RQ&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                - generic [ref=e221] [cursor=pointer]:
+                  - generic [ref=e222]:
+                    - heading "Kubra Khan||Adorable Look in Lime Color Dress||Have a Look 26 seconds" [level=3] [ref=e224]:
+                      - link "Kubra Khan||Adorable Look in Lime Color Dress||Have a Look 26 seconds" [ref=e225]:
+                        - /url: /watch?v=R_PvTIQV3RQ&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                        - text: Kubra Khan||Adorable Look in Lime Color Dress||Have a Look
+                    - generic [ref=e228]:
+                      - generic [ref=e229]: 25 views
+                      - generic [ref=e230]: •5 years ago
+                  - generic [ref=e231]:
+                    - link "Go to channel Dua Diary" [ref=e232]:
+                      - /url: /@duadiary9614
+                    - link "Dua Diary" [ref=e237]:
+                      - /url: /@duadiary9614
+              - generic [ref=e239]:
+                - link [ref=e241] [cursor=pointer]:
+                  - /url: /watch?v=veH2upZW20U&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                - generic [ref=e243] [cursor=pointer]:
+                  - generic [ref=e244]:
+                    - heading "Naimal Khawar Share Beauty Tips For Girls| 9 News HD 3 minutes, 38 seconds" [level=3] [ref=e246]:
+                      - link "Naimal Khawar Share Beauty Tips For Girls| 9 News HD 3 minutes, 38 seconds" [ref=e247]:
+                        - /url: /watch?v=veH2upZW20U&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                        - text: Naimal Khawar Share Beauty Tips For Girls| 9 News HD
+                    - generic [ref=e250]:
+                      - generic [ref=e251]: 226K views
+                      - generic [ref=e252]: •6 years ago
+                  - generic [ref=e253]:
+                    - link "Go to channel 9 News HD" [ref=e254]:
+                      - /url: /@9NewsHD
+                    - link "9 News HD" [ref=e259]:
+                      - /url: /@9NewsHD
+                  - generic [ref=e260]:
+                    - text: Watch Our More Videos ♥ Watch Pakistan News || https://bit.ly/Pakistan-News ♥ Watch International News|| ...
+                    - tooltip "tooltip"
+              - generic [ref=e262]:
+                - link [ref=e264] [cursor=pointer]:
+                  - /url: /watch?v=MWLLjLmi-U0&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                - generic [ref=e266] [cursor=pointer]:
+                  - generic [ref=e267]:
+                    - 'heading "#TikTakTalk | Fun & Unexpected Q&A With Kubra Khan | #16YearsOfHUMTV 1 minute, 1 second" [level=3] [ref=e269]':
+                      - 'link "#TikTakTalk | Fun & Unexpected Q&A With Kubra Khan | #16YearsOfHUMTV 1 minute, 1 second" [ref=e270]':
+                        - /url: /watch?v=MWLLjLmi-U0&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                        - text: "#TikTakTalk | Fun & Unexpected Q&A With Kubra Khan | #16YearsOfHUMTV"
+                    - generic [ref=e273]:
+                      - generic [ref=e274]: 106K views
+                      - generic [ref=e275]: •5 years ago
+                  - generic [ref=e276]:
+                    - link "Go to channel HUM TV" [ref=e277]:
+                      - /url: /@HUMTV
+                    - generic [ref=e278]:
+                      - link "HUM TV" [ref=e282]:
+                        - /url: /@HUMTV
+                      - img "Verified" [ref=e287]
+                  - generic [ref=e289]:
+                    - generic [ref=e290]: "16 Years of HUM TV #TikTakTalk | Fun & unexpected Q&A with Kubra Khan! #16YearsofHUMTV #HUMTV."
+                    - tooltip "tooltip"
+                  - generic [ref=e293]:
+                    - generic [ref=e294]:
+                      - generic [ref=e298]: 3 moments
+                      - button "WHAT WEIRD THING YOU DO LOOKING AT THE CAMERA? | YOUR LEAST FAVORITE WORD? | YOUR MOST MEMORABLE NIGHTMARE?" [ref=e299]
+                    - button "More" [ref=e304]
+              - generic [ref=e311]:
+                - link [ref=e313] [cursor=pointer]:
+                  - /url: /watch?v=-oQubQCKI6E&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                - generic [ref=e315] [cursor=pointer]:
+                  - generic [ref=e316]:
+                    - heading "Geo Ramzan Iftar Transmission - Geo Ki Mehman (Kubra Khan) - 24 May 2019 - Ehsaas Ramzan 9 minutes, 14 seconds" [level=3] [ref=e318]:
+                      - link "Geo Ramzan Iftar Transmission - Geo Ki Mehman (Kubra Khan) - 24 May 2019 - Ehsaas Ramzan 9 minutes, 14 seconds" [ref=e319]:
+                        - /url: /watch?v=-oQubQCKI6E&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                        - text: Geo Ramzan Iftar Transmission - Geo Ki Mehman (Kubra Khan) - 24 May 2019 - Ehsaas Ramzan
+                    - generic [ref=e322]:
+                      - generic [ref=e323]: 32K views
+                      - generic [ref=e324]: •6 years ago
+                  - generic [ref=e325]:
+                    - link "Go to channel HAR PAL GEO" [ref=e326]:
+                      - /url: /@HarPalGeoOfficial
+                    - generic [ref=e327]:
+                      - link "HAR PAL GEO" [ref=e331]:
+                        - /url: /@HarPalGeoOfficial
+                      - img "Verified" [ref=e336]
+                  - generic [ref=e338]:
+                    - generic [ref=e339]: "Geo Ramzan Iftar Transmission - Geo Ki Mehman (Kubra Khan) - 24 May 2019 - Ehsaas Ramzan #HARPALGEO #GeoRamzan."
+                    - tooltip "tooltip"
+            - generic "+3 more" [ref=e341] [cursor=pointer]
+        - generic [ref=e343]:
+          - heading "Explore more" [level=2] [ref=e346]:
+            - generic [ref=e348]: Explore more
+          - generic [ref=e350]:
+            - generic [ref=e351]:
+              - generic [ref=e353]:
+                - link [ref=e355] [cursor=pointer]:
+                  - /url: /watch?v=bGtR84nC650&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                - generic [ref=e357] [cursor=pointer]:
+                  - generic [ref=e358]:
+                    - heading "Build an AI Voice Receptionist with n8n & Vapi | Full Tutorial 2 hours, 2 minutes" [level=3] [ref=e360]:
+                      - link "Build an AI Voice Receptionist with n8n & Vapi | Full Tutorial 2 hours, 2 minutes" [ref=e361]:
+                        - /url: /watch?v=bGtR84nC650&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                        - text: Build an AI Voice Receptionist with n8n & Vapi | Full Tutorial
+                    - generic [ref=e364]:
+                      - generic [ref=e365]: 2.2K views
+                      - generic [ref=e366]: •3 months ago
+                  - generic [ref=e367]:
+                    - link "Go to channel Hassan Khaleeq" [ref=e368]:
+                      - /url: /@DigitalElectrition
+                    - link "Hassan Khaleeq" [ref=e373]:
+                      - /url: /@DigitalElectrition
+                  - generic [ref=e374]:
+                    - text: Build an AI Voice Receptionist with n8n & Vapi | Full Tutorial In this full tutorial, we build an AI voice receptionist using n8n and ...
+                    - tooltip "tooltip"
+                  - generic [ref=e377]:
+                    - generic [ref=e378]:
+                      - generic [ref=e382]: 7 chapters
+                      - button "Intro | Demo | VAPI Setup | Check Availability | Booking Tool | Outbound Calls | outro" [ref=e383]
+                    - button "More" [ref=e388]
+              - generic [ref=e395]:
+                - link [ref=e397] [cursor=pointer]:
+                  - /url: /watch?v=eMxGU2IRoko&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                - generic [ref=e399] [cursor=pointer]:
+                  - generic [ref=e400]:
+                    - heading "Turn Any Footage Cinematic in Davinci Resolve - Only 3 Nodes! 8 minutes" [level=3] [ref=e402]:
+                      - link "Turn Any Footage Cinematic in Davinci Resolve - Only 3 Nodes! 8 minutes" [ref=e403]:
+                        - /url: /watch?v=eMxGU2IRoko&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                        - text: Turn Any Footage Cinematic in Davinci Resolve - Only 3 Nodes!
+                    - generic [ref=e406]:
+                      - generic [ref=e407]: 247K views
+                      - generic [ref=e408]: •6 months ago
+                  - generic [ref=e409]:
+                    - link "Go to channel Hermanos Bander" [ref=e410]:
+                      - /url: /@hermanosbander
+                    - link "Hermanos Bander" [ref=e415]:
+                      - /url: /@hermanosbander
+                  - generic [ref=e416]:
+                    - text: In this tutorial, we're creating a cinematic color grade using ONLY 3 nodes in DaVinci Resolve. Yes — just three nodes. No paid ...
+                    - tooltip "tooltip"
+                  - img "4K" [ref=e421]:
+                    - generic [ref=e422]: 4K
+                  - generic [ref=e425]:
+                    - generic [ref=e426]:
+                      - generic [ref=e430]: 9 chapters
+                      - button "Intro | Project Settings | Tree Nodes | Transformation, the S curve | Hue vs Hue | The Look | Skin Tones | The Blacks | Before and After" [ref=e431]
+                    - button "More" [ref=e436]
+              - generic [ref=e443]:
+                - link [ref=e445] [cursor=pointer]:
+                  - /url: /watch?v=rEFDJhMm4XQ&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                - generic [ref=e447] [cursor=pointer]:
+                  - generic [ref=e448]:
+                    - heading "I Built an AI Receptionist for Dentists in 1 Hour (n8n + ElevenLabs) 1 hour, 8 minutes" [level=3] [ref=e450]:
+                      - link "I Built an AI Receptionist for Dentists in 1 Hour (n8n + ElevenLabs) 1 hour, 8 minutes" [ref=e451]:
+                        - /url: /watch?v=rEFDJhMm4XQ&pp=ygUkc2l0ZTp5b3V0dWJlLmNvbSB1anN0dWRpbyBrdWJyYSBhc2Fk
+                        - text: I Built an AI Receptionist for Dentists in 1 Hour (n8n + ElevenLabs)
+                    - generic [ref=e454]:
+                      - generic [ref=e455]: 23K views
+                      - generic [ref=e456]: •7 months ago
+                  - generic [ref=e457]:
+                    - link "Go to channel Jonas Massie" [ref=e458]:
+                      - /url: /@jonasmassieAI
+                    - link "Jonas Massie" [ref=e463]:
+                      - /url: /@jonasmassieAI
+                  - generic [ref=e464]:
+                    - text: "Learn, build & SELL Voice AI systems + meet builders: https://www.skool.com/aivoicenetwork Ready to transform your business ..."
+                    - tooltip "tooltip"
+                  - generic [ref=e467]:
+                    - generic [ref=e468]:
+                      - generic [ref=e472]: 11 chapters
+                      - button "Introduction | Dental Clinic Demo | System Architecture Overview | Crafting ElevenLabs Agent Prompt | Building ElevenLabs Workflow | Data Collection Items | Post-Call N8N Webhook Setup | N8N Post Call Workflow Build | Get Patient Record Tool + N8N Workflow | Full System Tests | Conclusion" [ref=e473]
+                    - button "More" [ref=e478]
+            - generic "+15 more" [ref=e485] [cursor=pointer]

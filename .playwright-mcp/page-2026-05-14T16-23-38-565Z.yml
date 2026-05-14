@@ -1,0 +1,243 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [ref=e9] [cursor=pointer]
+        - generic [ref=e11]:
+          - link "YouTube Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]: "NO"
+        - button "Skip navigation" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Skip navigation
+      - generic [ref=e25]:
+        - search [ref=e26]:
+          - generic [ref=e27]:
+            - combobox "Search" [expanded] [ref=e30]
+            - button "Search" [ref=e31] [cursor=pointer]
+        - generic [ref=e34]:
+          - button "Search with your voice" [ref=e36] [cursor=pointer]
+          - tooltip "tooltip"
+      - generic [ref=e43]:
+        - button "Create" [ref=e46] [cursor=pointer]:
+          - generic [ref=e49]: Create
+        - generic [ref=e53]:
+          - button "Notifications" [ref=e55] [cursor=pointer]
+          - tooltip "tooltip"
+        - button "Account menu" [ref=e61]
+  - navigation [ref=e63]
+  - main [ref=e65]:
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - button "Update channel banner" [ref=e77] [cursor=pointer]:
+          - generic [ref=e78]:
+            - img [ref=e79]
+            - generic [ref=e80]: Edit
+        - generic [ref=e85]:
+          - button "Update profile photo" [ref=e92] [cursor=pointer]:
+            - img [ref=e94]
+          - generic [ref=e95]:
+            - heading "UJStudio" [level=1] [ref=e97]
+            - generic [ref=e98]:
+              - group [ref=e99]:
+                - generic [ref=e100]: "@umarjaved77"
+              - generic [ref=e101]: •
+              - group [ref=e102]:
+                - generic "10 subscribers" [ref=e103]
+                - generic [ref=e104]: •
+                - generic [ref=e105]: 11 videos
+            - generic [ref=e107] [cursor=pointer]:
+              - generic [ref=e108]: Photographer , Cinematographer , Content Creator , Podcast , Live Streaming.
+              - button "Description. Photographer , Cinematographer , Content Creator , Podcast ,...tap for more." [ref=e109]:
+                - generic [ref=e110]: ...more
+            - generic [ref=e111]:
+              - link "Customize channel" [ref=e114] [cursor=pointer]:
+                - /url: https://studio.youtube.com/channel/UCOAQIFFH8Xi-vYVxhN5NTRw/editing
+                - generic [ref=e115]: Customize channel
+              - link "Manage videos" [ref=e121] [cursor=pointer]:
+                - /url: https://studio.youtube.com/channel/UCOAQIFFH8Xi-vYVxhN5NTRw/videos
+                - generic [ref=e122]: Manage videos
+      - tablist [ref=e129]:
+        - tablist [ref=e133]:
+          - tab "Home" [ref=e134] [cursor=pointer]:
+            - generic [ref=e135]: Home
+          - tab "Videos" [selected] [ref=e136] [cursor=pointer]:
+            - generic [ref=e137]: Videos
+          - tab "Playlists" [ref=e138] [cursor=pointer]:
+            - generic [ref=e139]: Playlists
+          - tab "Posts" [ref=e140] [cursor=pointer]:
+            - generic [ref=e141]: Posts
+          - button "Search" [ref=e145] [cursor=pointer]
+    - generic [ref=e152]:
+      - tablist [ref=e155]:
+        - tab "Latest" [selected] [ref=e159] [cursor=pointer]:
+          - generic [ref=e161]: Latest
+        - tab "Popular" [ref=e168] [cursor=pointer]:
+          - generic [ref=e170]: Popular
+        - tab "Oldest" [ref=e177] [cursor=pointer]:
+          - generic [ref=e179]: Oldest
+      - generic [ref=e183]:
+        - generic [ref=e187] [cursor=pointer]:
+          - link [ref=e188]:
+            - /url: /watch?v=IopsPmezh64
+            - generic [ref=e195]: 4:00
+          - generic [ref=e197]:
+            - generic [ref=e198]:
+              - heading "DK Logo 4 minutes" [level=3] [ref=e199]:
+                - link "DK Logo 4 minutes" [ref=e200]:
+                  - /url: /watch?v=IopsPmezh64
+                  - text: DK Logo
+              - group [ref=e203]:
+                - generic [ref=e204]: 1 view
+                - generic [ref=e205]: •
+                - generic [ref=e206]: 3 weeks ago
+            - button "More actions" [ref=e209]
+        - generic [ref=e218] [cursor=pointer]:
+          - link [ref=e219]:
+            - /url: /watch?v=yvAhdVdjIxY
+            - generic [ref=e229]: 0:54
+          - generic [ref=e231]:
+            - generic [ref=e232]:
+              - heading "Kubra & Asad 54 seconds" [level=3] [ref=e233]:
+                - link "Kubra & Asad 54 seconds" [ref=e234]:
+                  - /url: /watch?v=yvAhdVdjIxY
+                  - text: Kubra & Asad
+              - group [ref=e237]:
+                - generic [ref=e238]: 7 views
+                - generic [ref=e239]: •
+                - generic [ref=e240]: 5 years ago
+            - button "More actions" [ref=e243]
+        - generic [ref=e252] [cursor=pointer]:
+          - link [ref=e253]:
+            - /url: /watch?v=a3BLkr_vJAg
+            - generic [ref=e262]: 0:26
+          - generic [ref=e264]:
+            - generic [ref=e265]:
+              - heading "Highlights 26 seconds" [level=3] [ref=e266]:
+                - link "Highlights 26 seconds" [ref=e267]:
+                  - /url: /watch?v=a3BLkr_vJAg
+                  - text: Highlights
+              - group [ref=e270]:
+                - generic [ref=e271]: 8 views
+                - generic [ref=e272]: •
+                - generic [ref=e273]: 5 years ago
+            - button "More actions" [ref=e276]
+        - generic [ref=e285] [cursor=pointer]:
+          - link [ref=e286]:
+            - /url: /watch?v=Gcu87eWkiBY
+            - generic [ref=e295]: 0:53
+          - generic [ref=e297]:
+            - generic [ref=e298]:
+              - heading "Ss2021 53 seconds" [level=3] [ref=e299]:
+                - link "Ss2021 53 seconds" [ref=e300]:
+                  - /url: /watch?v=Gcu87eWkiBY
+                  - text: Ss2021
+              - group [ref=e303]:
+                - generic [ref=e304]: 4 views
+                - generic [ref=e305]: •
+                - generic [ref=e306]: 5 years ago
+            - button "More actions" [ref=e309]
+        - generic [ref=e318] [cursor=pointer]:
+          - link [ref=e319]:
+            - /url: /watch?v=kjInN6INIUk
+            - generic [ref=e328]: 0:46
+          - generic [ref=e330]:
+            - generic [ref=e331]:
+              - heading "ss2021 46 seconds" [level=3] [ref=e332]:
+                - link "ss2021 46 seconds" [ref=e333]:
+                  - /url: /watch?v=kjInN6INIUk
+                  - text: ss2021
+              - group [ref=e336]:
+                - generic [ref=e337]: 1 view
+                - generic [ref=e338]: •
+                - generic [ref=e339]: 5 years ago
+            - button "More actions" [ref=e342]
+        - generic [ref=e351] [cursor=pointer]:
+          - link [ref=e352]:
+            - /url: /watch?v=zF92aN6_chc
+            - generic [ref=e361]: 0:47
+          - generic [ref=e363]:
+            - generic [ref=e364]:
+              - heading "Ss2021 47 seconds" [level=3] [ref=e365]:
+                - link "Ss2021 47 seconds" [ref=e366]:
+                  - /url: /watch?v=zF92aN6_chc
+                  - text: Ss2021
+              - group [ref=e369]:
+                - generic [ref=e370]: 3 views
+                - generic [ref=e371]: •
+                - generic [ref=e372]: 5 years ago
+            - button "More actions" [ref=e375]
+        - generic [ref=e384] [cursor=pointer]:
+          - link [ref=e385]:
+            - /url: /watch?v=9NzYzoN_lUY
+            - generic [ref=e394]: 0:59
+          - generic [ref=e396]:
+            - generic [ref=e397]:
+              - heading "Sa2021 59 seconds" [level=3] [ref=e398]:
+                - link "Sa2021 59 seconds" [ref=e399]:
+                  - /url: /watch?v=9NzYzoN_lUY
+                  - text: Sa2021
+              - group [ref=e402]:
+                - generic [ref=e403]: 6 views
+                - generic [ref=e404]: •
+                - generic [ref=e405]: 5 years ago
+            - button "More actions" [ref=e408]
+        - generic [ref=e417] [cursor=pointer]:
+          - link [ref=e418]:
+            - /url: /watch?v=cgd1sEv2XUo
+            - generic [ref=e428]: 0:54
+          - generic [ref=e430]:
+            - generic [ref=e431]:
+              - heading "Ss2021 54 seconds" [level=3] [ref=e432]:
+                - link "Ss2021 54 seconds" [ref=e433]:
+                  - /url: /watch?v=cgd1sEv2XUo
+                  - text: Ss2021
+              - group [ref=e436]:
+                - generic [ref=e437]: 1 view
+                - generic [ref=e438]: •
+                - generic [ref=e439]: 5 years ago
+            - button "More actions" [ref=e442]
+        - generic [ref=e451] [cursor=pointer]:
+          - link [ref=e452]:
+            - /url: /watch?v=6G0vSPFPrAM
+            - generic [ref=e461]: 0:21
+          - generic [ref=e463]:
+            - generic [ref=e464]:
+              - heading "Ss2021 21 seconds" [level=3] [ref=e465]:
+                - link "Ss2021 21 seconds" [ref=e466]:
+                  - /url: /watch?v=6G0vSPFPrAM
+                  - text: Ss2021
+              - group [ref=e469]:
+                - generic [ref=e470]: 1 view
+                - generic [ref=e471]: •
+                - generic [ref=e472]: 5 years ago
+            - button "More actions" [ref=e475]
+        - generic [ref=e484] [cursor=pointer]:
+          - link [ref=e485]:
+            - /url: /watch?v=GcchdWXHAnI
+            - generic [ref=e494]: 1:00
+          - generic [ref=e496]:
+            - generic [ref=e497]:
+              - heading "Hage 1 minute" [level=3] [ref=e498]:
+                - link "Hage 1 minute" [ref=e499]:
+                  - /url: /watch?v=GcchdWXHAnI
+                  - text: Hage
+              - group [ref=e502]:
+                - generic [ref=e503]: 12 views
+                - generic [ref=e504]: •
+                - generic [ref=e505]: 5 years ago
+            - button "More actions" [ref=e508]
+        - generic [ref=e517] [cursor=pointer]:
+          - link [ref=e518]:
+            - /url: /watch?v=1edAEaJDuBg
+            - generic [ref=e527]: 1:01
+          - generic [ref=e529]:
+            - generic [ref=e530]:
+              - heading "Video Shoot 1 minute, 1 second" [level=3] [ref=e531]:
+                - link "Video Shoot 1 minute, 1 second" [ref=e532]:
+                  - /url: /watch?v=1edAEaJDuBg
+                  - text: Video Shoot
+              - group [ref=e535]:
+                - generic [ref=e536]: 6 views
+                - generic [ref=e537]: •
+                - generic [ref=e538]: 5 years ago
+            - button "More actions" [ref=e541]

@@ -1,0 +1,334 @@
+- generic [ref=e3]:
+  - main [ref=e4]:
+    - generic [ref=e65]:
+      - complementary [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e69]:
+            - menubar [ref=e70]:
+              - menuitem "Add new item" [ref=e71]:
+                - button "Add new item" [ref=e73] [cursor=pointer]:
+                  - img [ref=e75]
+            - button "Open command palette" [ref=e78] [cursor=pointer]:
+              - img [ref=e80]
+            - button "Toggle sidebar" [ref=e85] [cursor=pointer]:
+              - img [ref=e87]
+          - generic [ref=e95]:
+            - menuitem "Overview" [ref=e98] [cursor=pointer]:
+              - img [ref=e100]
+            - menuitem "Personal" [ref=e106] [cursor=pointer]:
+              - img [ref=e108]
+            - menuitem "Chat" [ref=e114] [cursor=pointer]:
+              - img [ref=e116]
+          - generic [ref=e120]:
+            - menuitem "Templates" [ref=e123] [cursor=pointer]:
+              - img [ref=e125]
+            - menuitem "Insights" [ref=e132] [cursor=pointer]:
+              - img [ref=e134]
+            - menuitem "Help" [ref=e138] [cursor=pointer]:
+              - img [ref=e140]
+            - menuitem "Settings" [ref=e146] [cursor=pointer]:
+              - img [ref=e148]
+      - main [ref=e152]:
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - generic [ref=e158]:
+                - heading "Overview" [level=2] [ref=e159]
+                - generic [ref=e160]: All the workflows, credentials and data tables you have access to
+              - generic [ref=e163]:
+                - button "Create workflow" [ref=e164] [cursor=pointer]:
+                  - generic [ref=e166]: Create workflow
+                - button [ref=e169] [cursor=pointer]:
+                  - img [ref=e171]
+            - list [ref=e175]:
+              - listitem [ref=e176]:
+                - link "Prod. executions 16 1,500%" [ref=e177] [cursor=pointer]:
+                  - /url: /insights/total
+                  - strong [ref=e178]:
+                    - generic: Prod. executions
+                  - generic [ref=e179]:
+                    - emphasis [ref=e180]: "16"
+                    - generic [ref=e181]:
+                      - img [ref=e182]
+                      - generic: 1,500%
+              - listitem [ref=e184]:
+                - link "Failed prod. executions 3 200%" [ref=e185] [cursor=pointer]:
+                  - /url: /insights/failed
+                  - strong [ref=e186]:
+                    - generic: Failed prod. executions
+                  - generic [ref=e187]:
+                    - emphasis [ref=e188]: "3"
+                    - generic [ref=e189]:
+                      - img [ref=e190]
+                      - generic: 200%
+              - listitem [ref=e192]:
+                - link "Failure rate 18.8 % 81.2pp" [ref=e193] [cursor=pointer]:
+                  - /url: /insights/failureRate
+                  - strong [ref=e194]:
+                    - generic: Failure rate
+                  - generic [ref=e195]:
+                    - emphasis [ref=e196]:
+                      - text: "18.8"
+                      - generic [ref=e197]: "%"
+                    - generic [ref=e198]:
+                      - img [ref=e199]
+                      - generic [ref=e201]: 81.2pp
+              - listitem [ref=e202]:
+                - link "Time saved --" [ref=e203] [cursor=pointer]:
+                  - /url: /insights/timeSaved
+                  - strong [ref=e204]:
+                    - generic [ref=e205]: Time saved
+                  - generic [ref=e206]:
+                    - emphasis [ref=e207]: "--"
+                    - img [ref=e208]
+              - listitem [ref=e212]:
+                - link "Run time (avg.) 6.4 s 11.35s" [ref=e213] [cursor=pointer]:
+                  - /url: /insights/averageRunTime
+                  - strong [ref=e214]:
+                    - generic: Run time (avg.)
+                  - generic [ref=e215]:
+                    - emphasis [ref=e216]:
+                      - text: "6.4"
+                      - generic [ref=e217]: s
+                    - generic [ref=e218]:
+                      - img [ref=e219]
+                      - generic: 11.35s
+            - generic [ref=e223]:
+              - link "Workflows" [ref=e225] [cursor=pointer]:
+                - /url: /home/workflows
+                - generic [ref=e226]: Workflows
+              - link "Credentials" [ref=e228] [cursor=pointer]:
+                - /url: /home/credentials
+                - generic [ref=e229]: Credentials
+              - link "Executions" [ref=e231] [cursor=pointer]:
+                - /url: /home/executions
+                - generic [ref=e232]: Executions
+              - link "Variables" [ref=e234] [cursor=pointer]:
+                - /url: /home/variables
+                - generic [ref=e235]: Variables
+              - link "Data tables" [ref=e237] [cursor=pointer]:
+                - /url: /home/datatables
+                - generic [ref=e238]: Data tables
+          - main [ref=e239]:
+            - generic [ref=e241]:
+              - generic [ref=e244]:
+                - generic [ref=e246]:
+                  - img [ref=e248]
+                  - textbox "Search" [ref=e252]
+                - generic [ref=e258]:
+                  - combobox "Select" [ref=e259] [cursor=pointer]: Sort by last updated
+                  - img [ref=e262] [cursor=pointer]
+                - button "Filters" [ref=e267] [cursor=pointer]:
+                  - img [ref=e269]
+              - generic [ref=e274]:
+                - generic [ref=e275]:
+                  - generic [ref=e278] [cursor=pointer]:
+                    - generic [ref=e279]:
+                      - heading "Portfolio Inquiry" [level=2] [ref=e281]
+                      - generic [ref=e283]:
+                        - generic [ref=e284]: Last updated 3 minutes ago |
+                        - generic [ref=e285]: Created 14 May
+                    - generic [ref=e287]:
+                      - generic [ref=e291]:
+                        - img [ref=e292]
+                        - text: "1"
+                      - generic [ref=e298]:
+                        - img [ref=e300]
+                        - link "Personal" [ref=e304]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - button [ref=e307]:
+                        - img [ref=e308]
+                  - generic [ref=e315] [cursor=pointer]:
+                    - generic [ref=e316]:
+                      - heading "Instagram + YouTube Performance Analyzer (Claude AI)" [level=2] [ref=e318]
+                      - generic [ref=e320]:
+                        - generic [ref=e321]: Last updated 14 hours ago |
+                        - generic [ref=e322]: Created 24 April
+                    - generic [ref=e324]:
+                      - generic [ref=e328]:
+                        - img [ref=e329]
+                        - text: "2"
+                      - generic [ref=e335]:
+                        - img [ref=e337]
+                        - link "Personal" [ref=e341]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - generic [ref=e344]: Published
+                      - button [ref=e347]:
+                        - img [ref=e348]
+                  - generic [ref=e355] [cursor=pointer]:
+                    - generic [ref=e356]:
+                      - heading "teaser" [level=2] [ref=e358]
+                      - generic [ref=e360]:
+                        - generic [ref=e361]: Last updated 2 weeks ago |
+                        - generic [ref=e362]: Created 28 April
+                    - generic [ref=e364]:
+                      - generic [ref=e368]:
+                        - img [ref=e369]
+                        - text: "1"
+                      - generic [ref=e375]:
+                        - img [ref=e377]
+                        - link "Personal" [ref=e381]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - button [ref=e384]:
+                        - img [ref=e385]
+                  - generic [ref=e392] [cursor=pointer]:
+                    - generic [ref=e393]:
+                      - heading "My workflow 3" [level=2] [ref=e395]
+                      - generic [ref=e397]:
+                        - generic [ref=e398]: Last updated 2 weeks ago |
+                        - generic [ref=e399]: Created 28 April
+                    - generic [ref=e401]:
+                      - generic [ref=e405]:
+                        - img [ref=e406]
+                        - text: "1"
+                      - generic [ref=e412]:
+                        - img [ref=e414]
+                        - link "Personal" [ref=e418]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - button [ref=e421]:
+                        - img [ref=e422]
+                  - generic [ref=e429] [cursor=pointer]:
+                    - generic [ref=e430]:
+                      - heading "My workflow 2" [level=2] [ref=e432]
+                      - generic [ref=e434]:
+                        - generic [ref=e435]: Last updated 2 weeks ago |
+                        - generic [ref=e436]: Created 28 April
+                    - generic [ref=e438]:
+                      - generic [ref=e442]:
+                        - img [ref=e443]
+                        - text: "2"
+                      - generic [ref=e449]:
+                        - img [ref=e451]
+                        - link "Personal" [ref=e455]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - button [ref=e458]:
+                        - img [ref=e459]
+                  - generic [ref=e466] [cursor=pointer]:
+                    - generic [ref=e467]:
+                      - heading "Ehtisham & Priya" [level=2] [ref=e469]
+                      - generic [ref=e471]:
+                        - generic [ref=e472]: Last updated 2 weeks ago |
+                        - generic [ref=e473]: Created 28 April
+                    - generic [ref=e475]:
+                      - generic [ref=e479]:
+                        - img [ref=e480]
+                        - text: "2"
+                      - generic [ref=e486]:
+                        - img [ref=e488]
+                        - link "Personal" [ref=e492]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - button [ref=e495]:
+                        - img [ref=e496]
+                  - generic [ref=e503] [cursor=pointer]:
+                    - generic [ref=e504]:
+                      - heading "Din Kebab Pizza & Grill - Order Agent" [level=2] [ref=e506]
+                      - generic [ref=e508]:
+                        - generic [ref=e509]: Last updated 2 weeks ago |
+                        - generic [ref=e510]: Created 28 April
+                    - generic [ref=e512]:
+                      - generic [ref=e515]:
+                        - img [ref=e517]
+                        - link "Personal" [ref=e521]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - generic [ref=e524]: Published
+                      - button [ref=e527]:
+                        - img [ref=e528]
+                  - generic [ref=e535] [cursor=pointer]:
+                    - generic [ref=e536]:
+                      - heading "AI Voice Agent (VAPI + GPT-4o)" [level=2] [ref=e538]
+                      - generic [ref=e540]:
+                        - generic [ref=e541]: Last updated 2 weeks ago |
+                        - generic [ref=e542]: Created 27 April
+                    - generic [ref=e544]:
+                      - generic [ref=e547]:
+                        - img [ref=e549]
+                        - link "Personal" [ref=e553]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - generic [ref=e556]: Published
+                      - button [ref=e559]:
+                        - img [ref=e560]
+                  - generic [ref=e567] [cursor=pointer]:
+                    - generic [ref=e568]:
+                      - heading "UJ Studio WhatsApp AI Auto Reply" [level=2] [ref=e570]
+                      - generic [ref=e572]:
+                        - generic [ref=e573]: Last updated 2 weeks ago |
+                        - generic [ref=e574]: Created 27 April
+                    - generic [ref=e576]:
+                      - generic [ref=e579]:
+                        - img [ref=e581]
+                        - link "Personal" [ref=e585]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - generic [ref=e588]: Published
+                      - button [ref=e591]:
+                        - img [ref=e592]
+                  - generic [ref=e599] [cursor=pointer]:
+                    - generic [ref=e600]:
+                      - heading "Whatsapp" [level=2] [ref=e602]
+                      - generic [ref=e604]:
+                        - generic [ref=e605]: Last updated 2 weeks ago |
+                        - generic [ref=e606]: Created 26 April
+                    - generic [ref=e608]:
+                      - generic [ref=e611]:
+                        - img [ref=e613]
+                        - link "Personal" [ref=e617]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - button [ref=e620]:
+                        - img [ref=e621]
+                  - generic [ref=e628] [cursor=pointer]:
+                    - generic [ref=e629]:
+                      - heading "Telegram Caption Bot" [level=2] [ref=e631]
+                      - generic [ref=e633]:
+                        - generic [ref=e634]: Last updated 2 weeks ago |
+                        - generic [ref=e635]: Created 26 April
+                    - generic [ref=e637]:
+                      - generic [ref=e641]:
+                        - img [ref=e642]
+                        - text: "2"
+                      - generic [ref=e648]:
+                        - img [ref=e650]
+                        - link "Personal" [ref=e654]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - generic [ref=e657]: Published
+                      - button [ref=e660]:
+                        - img [ref=e661]
+                  - generic [ref=e668] [cursor=pointer]:
+                    - generic [ref=e669]:
+                      - heading "social media caption agent" [level=2] [ref=e671]
+                      - generic [ref=e673]:
+                        - generic [ref=e674]: Last updated 2 weeks ago |
+                        - generic [ref=e675]: Created 25 April
+                    - generic [ref=e677]:
+                      - generic [ref=e680]:
+                        - img [ref=e682]
+                        - link "Personal" [ref=e686]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - generic [ref=e689]: Published
+                      - button [ref=e692]:
+                        - img [ref=e693]
+                  - generic [ref=e700] [cursor=pointer]:
+                    - generic [ref=e701]:
+                      - heading "My workflow" [level=2] [ref=e703]
+                      - generic [ref=e705]:
+                        - generic [ref=e706]: Last updated 2 weeks ago |
+                        - generic [ref=e707]: Created 24 April
+                    - generic [ref=e709]:
+                      - generic [ref=e712]:
+                        - img [ref=e714]
+                        - link "Personal" [ref=e718]:
+                          - /url: /projects/uQr1bObOJ5svZI3x/workflows
+                      - button [ref=e721]:
+                        - img [ref=e722]
+                - generic [ref=e728]:
+                  - generic [ref=e729]: Total 13
+                  - button "Go to previous page" [disabled] [ref=e730]:
+                    - generic [ref=e731]:
+                      - img
+                  - list [ref=e732]:
+                    - listitem "page 1" [ref=e733]: "1"
+                  - button "Go to next page" [disabled] [ref=e734]:
+                    - generic [ref=e735]:
+                      - img
+                  - generic [ref=e740]:
+                    - combobox "Select" [ref=e741] [cursor=pointer]: 50/page
+                    - img [ref=e744] [cursor=pointer]
+  - complementary
