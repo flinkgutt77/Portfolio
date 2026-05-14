@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
+import { Play } from 'lucide-react'
 import { galleryItems, galleryCategories } from '@/lib/data'
 import FadeIn from '@/components/ui/FadeIn'
 
@@ -19,9 +20,18 @@ export default function Gallery() {
           item => item.category.toLowerCase() === activeFilter.toLowerCase()
         )
 
-  const handleImageClick = (index: number) => {
-    setCurrentIndex(index)
-    setOpen(true)
+  // Only photo items go into the lightbox (no videos)
+  const photoItems = filtered.filter(item => !item.videoId)
+
+  const handleItemClick = (item: typeof filtered[0], index: number) => {
+    if (item.videoId) {
+      window.open(`https://youtube.com/watch?v=${item.videoId}`, '_blank')
+    } else {
+      // Map to photo-only index for lightbox
+      const photoIndex = photoItems.findIndex(p => p.id === item.id)
+      setCurrentIndex(photoIndex)
+      setOpen(true)
+    }
   }
 
   return (
@@ -57,26 +67,34 @@ export default function Gallery() {
         {filtered.map((item, index) => (
           <button
             key={item.id}
-            className="break-inside-avoid mb-4 w-full text-left"
-            onClick={() => handleImageClick(index)}
-            aria-label={`View ${item.alt} in lightbox`}
+            className="break-inside-avoid mb-4 w-full text-left relative group"
+            onClick={() => handleItemClick(item, index)}
+            aria-label={item.videoId ? `Watch ${item.alt} on YouTube` : `View ${item.alt}`}
           >
             <Image
               src={item.src}
               alt={item.alt}
               width={item.width}
               height={item.height}
-              className="w-full h-auto object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200 rounded-sm"
+              className="w-full h-auto object-cover rounded-sm group-hover:opacity-80 transition-opacity duration-200"
             />
+            {/* Play button overlay for video items */}
+            {item.videoId && (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-gold/90 flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                  <Play size={22} fill="black" className="text-background ml-1" />
+                </div>
+              </div>
+            )}
           </button>
         ))}
       </div>
 
-      {/* Lightbox */}
+      {/* Lightbox — photos only */}
       <Lightbox
         open={open}
         close={() => setOpen(false)}
-        slides={filtered.map(item => ({ src: item.src }))}
+        slides={photoItems.map(item => ({ src: item.src }))}
         index={currentIndex}
         on={{ view: ({ index }) => setCurrentIndex(index) }}
       />

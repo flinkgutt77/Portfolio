@@ -2,9 +2,9 @@
 export const navLinks = [
   { label: 'Services', href: '#services' },
   { label: 'Portfolio', href: '#gallery' },
+  { label: 'Fashion', href: '#gallery' },
   { label: 'Films', href: '#films' },
   { label: 'Signage', href: '#signage' },
-  { label: 'AI Agents', href: '#ai-agents' },
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -18,15 +18,12 @@ export type Service = {
 }
 
 export const services: Service[] = [
-  { id: 'wedding', name: 'Wedding Photography', description: 'Timeless moments from your most special day', icon: 'Heart' },
-  { id: 'birthday', name: 'Birthday Photography', description: 'Celebrate every milestone with stunning shots', icon: 'Cake' },
-  { id: 'portrait', name: 'Family Portraits', description: 'Authentic family memories that last forever', icon: 'Users' },
-  { id: 'ad-photo', name: 'Ad Photography', description: 'High-impact visuals that drive your brand forward', icon: 'Camera' },
-  { id: 'ad-film', name: 'Advertisement Films', description: 'Cinematic brand stories that captivate audiences', icon: 'Film' },
-  { id: 'signage', name: 'Signage Boards', description: 'Eye-catching physical signage for your business', icon: 'LayoutDashboard' },
-  { id: 'digital-screen', name: 'Digital Signage Screens', description: 'Dynamic digital displays for modern spaces', icon: 'Monitor' },
-  { id: 'digital-ads', name: 'Digital Signage Ads', description: 'Targeted advertising campaigns on digital networks', icon: 'TrendingUp' },
-  { id: 'ai-agents', name: 'AI Agent Workflows', description: 'Automate and scale your business with AI', icon: 'Bot' },
+  { id: 'wedding', name: 'Wedding Photography & Film', description: 'Timeless photos and cinematic films from your most special day — every emotion beautifully preserved', icon: 'Heart' },
+  { id: 'birthday', name: 'Birthday Photography & Film', description: 'Vibrant coverage of your celebration, from candid moments to cinematic highlights', icon: 'Cake' },
+  { id: 'portrait', name: 'Family Portraits', description: 'Authentic, warm family portraits that capture the love and connection between your loved ones', icon: 'Users' },
+  { id: 'fashion', name: 'Fashion Photography & Film', description: 'Striking fashion editorials and cinematic lookbook films that bring your collection to life with style and elegance', icon: 'Sparkles' },
+  { id: 'advertisement', name: 'Advertisement Photography & Film', description: 'High-impact visuals and cinematic brand films that elevate your marketing and captivate your audience', icon: 'Camera' },
+  { id: 'signage', name: 'Digital Signage', description: 'From signage board design to digital screen installation and advertising — complete signage solutions for your business', icon: 'Monitor' },
 ]
 
 // Gallery items
@@ -37,29 +34,55 @@ export type GalleryItem = {
   category: string
   width: number
   height: number
+  videoId?: string
 }
 
 export const galleryItems: GalleryItem[] = [
   // Weddings
-  { id: 'w1', src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800', alt: 'Wedding couple', category: 'weddings', width: 800, height: 1000 },
-  { id: 'w2', src: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800', alt: 'Wedding ceremony', category: 'weddings', width: 800, height: 600 },
-  { id: 'w3', src: 'https://images.unsplash.com/photo-1583939411023-14783179e581?w=800', alt: 'Wedding rings', category: 'weddings', width: 800, height: 800 },
+  { id: 'w1', src: '/Wedding/Wedding-1.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 1000 },
+  { id: 'w2', src: '/Wedding/wedding-2.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 600 },
+  { id: 'w3', src: '/Wedding/wedding-3.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 800 },
+  { id: 'w4', src: '/Wedding/wedding-4.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 600 },
+  { id: 'w5', src: '/Wedding/wedding-5.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 1000 },
+  { id: 'w6', src: '/Wedding/wedding-6.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 600 },
+  { id: 'w7', src: '/Wedding/wedding-7.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 800 },
+  { id: 'w8', src: '/Wedding/nilo05.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 1000 },
+  { id: 'w9', src: '/Wedding/nilo06.jpg', alt: 'Wedding', category: 'weddings', width: 800, height: 600 },
   // Birthdays
-  { id: 'b1', src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800', alt: 'Birthday celebration', category: 'birthdays', width: 800, height: 600 },
-  { id: 'b2', src: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800', alt: 'Birthday cake', category: 'birthdays', width: 800, height: 1000 },
+  { id: 'b1', src: '/Birthday/birthday-1.jpg', alt: 'Birthday', category: 'birthdays', width: 800, height: 600 },
+  { id: 'b2', src: '/Birthday/birthday-2.jpg', alt: 'Birthday', category: 'birthdays', width: 800, height: 1000 },
+  { id: 'b3', src: '/Birthday/birthday-3.jpg', alt: 'Birthday', category: 'birthdays', width: 800, height: 600 },
+  { id: 'b4', src: '/Birthday/birthday-4.JPG', alt: 'Birthday', category: 'birthdays', width: 800, height: 800 },
   // Portraits
-  { id: 'p1', src: 'https://images.unsplash.com/photo-1511895426328-dc8714191011?w=800', alt: 'Family portrait', category: 'portraits', width: 800, height: 600 },
-  { id: 'p2', src: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800', alt: 'Family outdoor', category: 'portraits', width: 800, height: 1000 },
+  // portrait-1.jpg needs manual retouching — excluded temporarily
+  { id: 'p2', src: '/Portraits/portrait-2.jpg', alt: 'Portrait', category: 'portraits', width: 800, height: 600 },
+  { id: 'p3', src: '/Portraits/portrait-3.jpg', alt: 'Portrait', category: 'portraits', width: 800, height: 1000 },
+  { id: 'p4', src: '/Portraits/portrait-4.jpg', alt: 'Portrait', category: 'portraits', width: 800, height: 600 },
+  { id: 'p5', src: '/Portraits/Nilofer.jpg', alt: 'Portrait', category: 'portraits', width: 800, height: 1000 },
+  { id: 'p6', src: '/Portraits/Sam.jpg', alt: 'Portrait', category: 'portraits', width: 800, height: 800 },
+  { id: 'p7', src: '/Portraits/Studio1.jpg', alt: 'Studio Portrait', category: 'portraits', width: 800, height: 600 },
+  // Fashion
+  { id: 'fa1', src: '/Fashion/fashion-1.jpg', alt: 'Fashion', category: 'fashion', width: 800, height: 1000 },
+  { id: 'fa2', src: '/Fashion/fashion-2.jpg', alt: 'Fashion', category: 'fashion', width: 800, height: 600 },
+  { id: 'fa3', src: '/Fashion/fashion-3.jpg', alt: 'Fashion', category: 'fashion', width: 800, height: 1000 },
+  { id: 'fa4', src: '/Fashion/fashion-4.jpg', alt: 'Fashion', category: 'fashion', width: 800, height: 600 },
+  { id: 'fa5', src: '/Fashion/fashion-5.jpg', alt: 'Fashion', category: 'fashion', width: 800, height: 800 },
   // Ads
-  { id: 'a1', src: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800', alt: 'Ad photography', category: 'ads', width: 800, height: 600 },
-  { id: 'a2', src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800', alt: 'Product shot', category: 'ads', width: 800, height: 800 },
-  // Signage
-  { id: 's1', src: 'https://images.unsplash.com/photo-1563461661026-49631dd5d68e?w=800', alt: 'Digital signage', category: 'signage', width: 800, height: 600 },
-  { id: 's2', src: 'https://images.unsplash.com/photo-1501527098-84e9c7b5c17b?w=800', alt: 'Business signage', category: 'signage', width: 800, height: 1000 },
+  { id: 'a1', src: '/Ads/ad-1.jpg', alt: 'Advertisement', category: 'ads', width: 800, height: 600 },
+  { id: 'a2', src: '/Ads/ad-2.jpg', alt: 'Advertisement', category: 'ads', width: 800, height: 1000 },
+  { id: 'a3', src: '/Ads/ad-3.jpg', alt: 'Advertisement', category: 'ads', width: 800, height: 600 },
+  { id: 'a4', src: '/Ads/ad-4.jpg', alt: 'Advertisement', category: 'ads', width: 800, height: 800 },
+  { id: 'a5', src: '/Ads/ad-5.jpg', alt: 'Advertisement', category: 'ads', width: 800, height: 600 },
+  { id: 'a6', src: '/Ads/ad-6.jpg', alt: 'Advertisement', category: 'ads', width: 800, height: 1000 },
+  { id: 'a7', src: '/Ads/ad-7.jpg', alt: 'Advertisement', category: 'ads', width: 800, height: 600 },
+  // Films — YouTube thumbnails
+  { id: 'f1', src: 'https://img.youtube.com/vi/IopsPmezh64/maxresdefault.jpg', alt: 'Kubra & Asad — Wedding Film', category: 'films', width: 1280, height: 720, videoId: 'IopsPmezh64' },
+  { id: 'f2', src: 'https://img.youtube.com/vi/GcchdWXHAnI/maxresdefault.jpg', alt: 'Video Shoot', category: 'films', width: 1280, height: 720, videoId: 'GcchdWXHAnI' },
+  { id: 'f3', src: 'https://img.youtube.com/vi/yvAhdVdjIxY/maxresdefault.jpg', alt: 'Highlights Reel', category: 'films', width: 1280, height: 720, videoId: 'yvAhdVdjIxY' },
 ]
 
 // Gallery filter categories
-export const galleryCategories = ['All', 'Weddings', 'Birthdays', 'Portraits', 'Ads', 'Signage']
+export const galleryCategories = ['All', 'Weddings', 'Birthdays', 'Portraits', 'Fashion', 'Ads', 'Signage', 'Films']
 
 // Testimonials
 export type Testimonial = {

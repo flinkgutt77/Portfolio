@@ -13,33 +13,46 @@ export default function Hero() {
       <div
         className="absolute inset-0 -z-10"
         style={{
-          backgroundImage:
-            'url(https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80)',
+          backgroundImage: 'url(/A32I0135.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
       />
 
-      {/* Dark gradient overlay — bottom to top */}
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent -z-10" />
+      {/* Overlay — darker for text readability */}
+      <div className="absolute inset-0 bg-background/65 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/20 -z-10" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        {/* Label + Divider + Heading */}
+      <div className="relative z-10 text-center px-10 py-14 max-w-5xl mx-auto"
+        style={{
+          background: 'linear-gradient(135deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0.35) 100%)',
+          backdropFilter: 'blur(2px)',
+          borderLeft: '1px solid rgba(201,169,110,0.2)',
+          borderRight: '1px solid rgba(201,169,110,0.2)',
+        }}
+      >
+        {/* Top tagline */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0 }}
         >
-          <p className="text-gold uppercase tracking-widest text-xs sm:text-sm font-sans">
-            PHOTOGRAPHY · FILM · DIGITAL
+          <p className="text-gold uppercase tracking-[0.4em] text-xs sm:text-sm font-sans"
+            style={{ textShadow: '0 2px 12px rgba(0,0,0,0.8)' }}>
+            Photography &nbsp;·&nbsp; Cinematography &nbsp;·&nbsp; Digital Signage
           </p>
-          <div className="w-16 h-px bg-gold mx-auto my-6" />
-          <h1 className="font-serif font-normal leading-tight text-text-primary text-5xl md:text-7xl lg:text-8xl">
-            Capturing Moments,
+          <div className="w-20 h-px bg-gold mx-auto my-8" />
+          <h1
+            className="font-serif font-normal leading-[1.1] text-white text-5xl md:text-7xl lg:text-8xl"
+            style={{ textShadow: '0 4px 30px rgba(0,0,0,0.9)' }}
+          >
+            Crafting Visual
             <br />
-            Creating Stories
+            <em className="text-gold not-italic">Stories</em> That Last
+            <br />
+            Forever
           </h1>
         </motion.div>
 
@@ -49,8 +62,11 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          <p className="text-text-muted text-sm md:text-base mt-6 max-w-xl mx-auto">
-            Wedding · Birthday · Portrait · Advertising · Digital Signage · AI Workflows
+          <p
+            className="text-white/80 text-sm md:text-base mt-8 max-w-2xl mx-auto tracking-wider leading-relaxed"
+            style={{ textShadow: '0 2px 12px rgba(0,0,0,0.9)' }}
+          >
+            Wedding &nbsp;·&nbsp; Birthday &nbsp;·&nbsp; Portrait &nbsp;·&nbsp; Advertising &nbsp;·&nbsp; Digital Signage
           </p>
         </motion.div>
 
