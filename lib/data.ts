@@ -2,7 +2,6 @@
 export const navLinks = [
   { label: 'Services', href: '#services' },
   { label: 'Portfolio', href: '#gallery' },
-  { label: 'Fashion', href: '#gallery' },
   { label: 'Films', href: '#films' },
   { label: 'Signage', href: '#signage' },
   { label: 'About', href: '#about' },
