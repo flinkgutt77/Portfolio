@@ -2,18 +2,6 @@ import FadeIn from '@/components/ui/FadeIn'
 
 const filmCards = [
   {
-    title: 'Kubra & Asad',
-    client: 'Wedding Film',
-    year: '2021',
-    videoId: 'IopsPmezh64',
-  },
-  {
-    title: 'Video Shoot',
-    client: 'Behind the Scenes',
-    year: '2021',
-    videoId: 'GcchdWXHAnI',
-  },
-  {
     title: 'Highlights',
     client: 'Highlights Reel',
     year: '2021',
@@ -42,8 +30,8 @@ export default function Films() {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/IopsPmezh64?rel=0&color=white"
-            title="UJStudio Showreel — Kubra & Asad"
+            src="https://www.youtube.com/embed/yvAhdVdjIxY?rel=0&color=white"
+            title="UJStudio Highlights Reel"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="w-full h-full"

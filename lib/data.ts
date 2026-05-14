@@ -39,8 +39,6 @@ export type GalleryItem = {
 
 export const galleryItems: GalleryItem[] = [
   // Films — YouTube thumbnails
-  { id: 'f1', src: 'https://img.youtube.com/vi/IopsPmezh64/maxresdefault.jpg', alt: 'Kubra & Asad — Wedding Film', category: 'films', width: 1280, height: 720, videoId: 'IopsPmezh64' },
-  { id: 'f2', src: 'https://img.youtube.com/vi/GcchdWXHAnI/maxresdefault.jpg', alt: 'Video Shoot', category: 'films', width: 1280, height: 720, videoId: 'GcchdWXHAnI' },
   { id: 'f3', src: 'https://img.youtube.com/vi/yvAhdVdjIxY/maxresdefault.jpg', alt: 'Highlights Reel', category: 'films', width: 1280, height: 720, videoId: 'yvAhdVdjIxY' },
 ]
 
