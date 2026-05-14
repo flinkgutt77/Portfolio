@@ -5,13 +5,14 @@ import { toast } from 'sonner'
 
 const serviceOptions = [
   'Wedding Photography',
+  'Wedding Film',
   'Birthday Photography',
   'Family Portraits',
-  'Ad Photography',
-  'Advertisement Films',
-  'Signage Boards',
+  'Fashion Photography',
+  'Fashion Film',
+  'Advertisement Photography',
+  'Advertisement Film',
   'Digital Signage',
-  'AI Agent Workflows',
   'Other',
 ]
 
@@ -100,7 +101,7 @@ export default function Contact() {
             type="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            placeholder="+92 300 0000000"
+            placeholder="+47 000 00 000"
             className={inputClass}
           />
         </div>

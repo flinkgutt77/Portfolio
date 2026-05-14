@@ -52,7 +52,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 flex flex-col gap-8">
         {/* Top row: logo + socials */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-          <a href="#" className="flex flex-col leading-none">
+          <a href="#" className="flex flex-col leading-none group">
             <span className="font-serif text-2xl text-text-primary tracking-widest group-hover:text-gold transition-colors duration-300">UJ STUDIO</span>
             <span className="text-xs tracking-[0.45em] uppercase text-gold mt-1">Norge</span>
           </a>

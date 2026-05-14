@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-const N8N_WEBHOOK_URL = process.env.N8N_WEBHOOK_URL ||
+const N8N_WEBHOOK_URL = process.env.N8N_WEBHOOK_URL ??
   'https://mortified-upright-oops.ngrok-free.dev/webhook/681061ad-aedf-46ab-ae07-83b34d778bc9'
 
 export async function POST(req: NextRequest) {
