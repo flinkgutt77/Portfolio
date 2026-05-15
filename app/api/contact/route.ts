@@ -35,9 +35,9 @@ export async function POST(req: NextRequest) {
     // 2. Send confirmation email to client via Resend
     if (process.env.RESEND_API_KEY) {
       const resend = new Resend(process.env.RESEND_API_KEY)
-      // Send inquiry notification to owner (always works on free plan)
-      await resend.emails.send({
-        from: 'UJ Studio Portfolio <hello@ujstudionorge.com>',
+      // Send inquiry notification to owner
+      const { error: ownerErr } = await resend.emails.send({
+        from: 'UJ Studio Portfolio <onboarding@resend.dev>',
         to: 'flinkgutt11@gmail.com',
         subject: `📸 New Inquiry from ${name} — ${service || 'General'}`,
         html: `<div style="font-family:Arial,sans-serif;padding:20px;background:#0a0a0a;color:#f5f0e8;">
@@ -49,9 +49,10 @@ export async function POST(req: NextRequest) {
           <p><b>Message:</b><br/>${message.replace(/\n/g, '<br/>')}</p>
           <p style="color:#888;font-size:12px;">Submitted: ${submittedAt}</p>
         </div>`,
-      }).catch(() => {})
-      // Also send confirmation to client
-      await resend.emails.send({
+      })
+      if (ownerErr) console.error('Owner email error:', ownerErr)
+      // Send confirmation to client
+      const { error: clientErr } = await resend.emails.send({
         from: 'UJ Studio Norge <onboarding@resend.dev>',
         to: email,
         subject: `Thank you for your inquiry, ${name}!`,
@@ -147,6 +148,7 @@ export async function POST(req: NextRequest) {
 </html>
         `.trim(),
       })
+      if (clientErr) console.error('Client email error:', clientErr)
     }
 
     return NextResponse.json({ success: true })
