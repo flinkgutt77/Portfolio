@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
 const N8N_WEBHOOK_URL = process.env.N8N_WEBHOOK_URL ??
-  'https://mortified-upright-oops.ngrok-free.dev/webhook/681061ad-aedf-46ab-ae07-83b34d778bc9'
+  'https://n8n.ujstudionorge.com/webhook/681061ad-aedf-46ab-ae07-83b34d778bc9'
 
 export async function POST(req: NextRequest) {
   try {
@@ -19,7 +19,6 @@ export async function POST(req: NextRequest) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'ngrok-skip-browser-warning': 'true',
       },
       body: JSON.stringify({ name, email, phone: phone || '', service: service || 'Not specified', message, submittedAt }),
     }).catch(() => {})
