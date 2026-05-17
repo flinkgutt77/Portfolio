@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
       const resend = new Resend(process.env.RESEND_API_KEY)
       // Send inquiry notification to owner
       const { error: ownerErr } = await resend.emails.send({
-        from: 'UJ Studio Portfolio <onboarding@resend.dev>',
+        from: 'UJ Studio Portfolio <hello@ujstudionorge.com>',
         to: 'flinkgutt11@gmail.com',
         subject: `📸 New Inquiry from ${name} — ${service || 'General'}`,
         html: `<div style="font-family:Arial,sans-serif;padding:20px;background:#0a0a0a;color:#f5f0e8;">
@@ -52,7 +52,7 @@ export async function POST(req: NextRequest) {
       if (ownerErr) console.error('Owner email error:', ownerErr)
       // Send confirmation to client
       const { error: clientErr } = await resend.emails.send({
-        from: 'UJ Studio Norge <onboarding@resend.dev>',
+        from: 'UJ Studio Norge <hello@ujstudionorge.com>',
         to: email,
         subject: `Thank you for your inquiry, ${name}!`,
         html: `
