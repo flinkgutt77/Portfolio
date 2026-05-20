@@ -1,9 +1,9 @@
 // Nav links
 export const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Portfolio', href: '#gallery' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Portfolio', href: '/#gallery' },
+  { label: 'About', href: '/#about' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 // Services

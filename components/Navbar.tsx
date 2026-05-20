@@ -12,7 +12,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-8 h-24 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-4 group">
+        <a href="/" className="flex items-center gap-4 group">
           <Image
             src="/C-2.png"
             alt="UJ Studio Norge"
