@@ -1,0 +1,411 @@
+{
+  "name": "UJ YouTube Content Automation",
+  "nodes": [
+    {
+      "id": "a1b2c3d4-0001",
+      "name": "Schedule — Monday 9am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-200, 260],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * 1"
+            }
+          ]
+        },
+        "triggerAtTimezone": "Europe/Oslo"
+      }
+    },
+    {
+      "id": "a1b2c3d4-0002",
+      "name": "Telegram — Receive Topic",
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.1,
+      "position": [-200, 460],
+      "parameters": {
+        "updates": ["message"],
+        "additionalFields": {}
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "cMKJjpljlUSsXdL9",
+          "name": "Telegram Jarvis Bot"
+        }
+      }
+    },
+    {
+      "id": "a1b2c3d4-0003",
+      "name": "Set Topic",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [60, 360],
+      "parameters": {
+        "jsCode": "const input = $input.first();\n\nlet topic;\nif (input.json.message && input.json.message.text) {\n  const text = input.json.message.text.trim();\n  topic = text.replace(/^\\/create\\s*/i, '').trim();\n  if (!topic) topic = 'South Asian Wedding Photography in Norway';\n} else {\n  topic = 'South Asian Wedding Photography in Norway';\n}\n\nreturn [{ json: { topic, triggered_by: input.json.message ? 'telegram' : 'schedule' } }];"
+      }
+    },
+    {
+      "id": "a1b2c3d4-0004",
+      "name": "Claude — Generate Content",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [300, 360],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "authentication": "none",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "x-api-key", "value": "={{ $env.ANTHROPIC_API_KEY }}" },
+            { "name": "anthropic-version", "value": "2023-06-01" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"claude-sonnet-4-20250514\",\n  \"max_tokens\": 2048,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"You are a content strategist for UJ Studio Norge — South Asian wedding photography and filmmaking studio in Norway run by Umar Javed. Create YouTube content for this topic: {{ $json.topic }}\\n\\nBrand voice: cinematic, authentic, culturally grounded. Audience: South Asian (Pakistani/Indian) couples in Norway + global wedding filmmakers.\\n\\nReturn ONLY a valid JSON object (no markdown fences, no explanation) with exactly these keys:\\n{\\n  \\\"youtube_title\\\": \\\"compelling SEO title under 70 chars\\\",\\n  \\\"youtube_description\\\": \\\"full YouTube description with hook opening line, 3-4 paragraphs, timestamps placeholder, and 10 relevant hashtags\\\",\\n  \\\"youtube_tags\\\": [\\\"tag1\\\", \\\"tag2\\\", \\\"tag3\\\", \\\"tag4\\\", \\\"tag5\\\", \\\"tag6\\\", \\\"tag7\\\", \\\"tag8\\\"],\\n  \\\"hook_30sec\\\": \\\"spoken 30-second hook script to open the video\\\",\\n  \\\"script_outline\\\": \\\"full video script outline with 5-7 labeled sections\\\",\\n  \\\"pollo_ai_prompt\\\": \\\"cinematic video generation prompt for Kling AI v2.1 — describe visual style, lighting, movement, mood in detail\\\",\\n  \\\"instagram_caption_en\\\": \\\"Instagram caption in English, 150-200 words, emotional, ends with CTA, 10-15 hashtags\\\",\\n  \\\"instagram_caption_no\\\": \\\"same caption in Norwegian with Norwegian hashtags\\\",\\n  \\\"tiktok_caption\\\": \\\"TikTok caption under 150 chars, punchy, 3-5 hashtags\\\",\\n  \\\"thumbnail_concept\\\": \\\"detailed thumbnail design description — layout, text overlay, color, emotion\\\"\\\n}\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "id": "a1b2c3d4-0005",
+      "name": "Parse Claude Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [560, 360],
+      "parameters": {
+        "jsCode": "const response = $input.first().json;\nconst rawText = response.content[0].text;\n\nconst cleaned = rawText\n  .replace(/^```json\\s*/i, '')\n  .replace(/^```\\s*/i, '')\n  .replace(/```\\s*$/i, '')\n  .trim();\n\nlet parsed;\ntry {\n  parsed = JSON.parse(cleaned);\n} catch (e) {\n  throw new Error('Claude returned invalid JSON. Raw: ' + rawText.substring(0, 300));\n}\n\nconst contentId = 'YT-' + new Date().toISOString().slice(0, 10).replace(/-/g, '') + '-' + Math.random().toString(36).slice(2, 6).toUpperCase();\nconst today = new Date().toISOString().slice(0, 10);\nconst topic = $('Set Topic').first().json.topic;\n\nreturn [{\n  json: {\n    content_id: contentId,\n    date: today,\n    topic,\n    youtube_title: parsed.youtube_title || '',\n    youtube_description: parsed.youtube_description || '',\n    youtube_tags: Array.isArray(parsed.youtube_tags) ? parsed.youtube_tags.join(', ') : (parsed.youtube_tags || ''),\n    hook_30sec: parsed.hook_30sec || '',\n    script_outline: parsed.script_outline || '',\n    pollo_ai_prompt: parsed.pollo_ai_prompt || '',\n    instagram_caption_en: parsed.instagram_caption_en || '',\n    instagram_caption_no: parsed.instagram_caption_no || '',\n    tiktok_caption: parsed.tiktok_caption || '',\n    thumbnail_concept: parsed.thumbnail_concept || '',\n    status: 'pending_review'\n  }\n}];"
+      }
+    },
+    {
+      "id": "a1b2c3d4-0006",
+      "name": "Google Sheets — Log Content",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.2,
+      "position": [820, 200],
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1rFEeWkyRdwSU1Xaty0GHb3aTfjhei-lzZlNiYkh4CvU",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Content Calendar",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "content_id": "={{ $json.content_id }}",
+            "date": "={{ $json.date }}",
+            "topic": "={{ $json.topic }}",
+            "youtube_title": "={{ $json.youtube_title }}",
+            "youtube_tags": "={{ $json.youtube_tags }}",
+            "instagram_en": "={{ $json.instagram_caption_en }}",
+            "instagram_no": "={{ $json.instagram_caption_no }}",
+            "tiktok_caption": "={{ $json.tiktok_caption }}",
+            "thumbnail_concept": "={{ $json.thumbnail_concept }}",
+            "status": "={{ $json.status }}",
+            "pollo_ai_job": "",
+            "published_at": ""
+          },
+          "matchingColumns": [],
+          "schema": []
+        },
+        "options": {}
+      },
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "CN72mP5LxxCBjAND",
+          "name": "Google Sheets - Jarvis"
+        }
+      }
+    },
+    {
+      "id": "a1b2c3d4-0007",
+      "name": "Pollo AI — Start Video",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [820, 520],
+      "parameters": {
+        "method": "POST",
+        "url": "https://pollo.ai/api/platform/generation/kling-ai/kling-v2-1",
+        "authentication": "none",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "x-api-key", "value": "={{ $env.POLLO_AI_API_KEY }}" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"input\": {\n    \"prompt\": \"{{ $json.pollo_ai_prompt }}\",\n    \"length\": 10,\n    \"mode\": \"pro\"\n  }\n}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "a1b2c3d4-0008",
+      "name": "Telegram — Send Preview",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [820, 360],
+      "parameters": {
+        "resource": "message",
+        "operation": "sendMessage",
+        "chatId": "6463557010",
+        "text": "=🎬 *YouTube Content Ready for Review*\n\n📌 *Topic:* {{ $json.topic }}\n🆔 *ID:* `{{ $json.content_id }}`\n\n📝 *Title:*\n_{{ $json.youtube_title }}_\n\n🎣 *30-sec Hook:*\n{{ $json.hook_30sec }}\n\n📸 *Thumbnail Concept:*\n{{ $json.thumbnail_concept }}\n\n🇬🇧 *Instagram EN:*\n{{ $json.instagram_caption_en.substring(0, 300) }}...\n\n📱 *TikTok:*\n{{ $json.tiktok_caption }}\n\n🎨 *Pollo AI:* Video generating in background — check taskId in Sheets\n\n——\nApprove to publish to YouTube, Instagram, TikTok, Facebook",
+        "additionalFields": {
+          "parseMode": "Markdown",
+          "replyMarkup": "InlineKeyboard",
+          "inlineKeyboard": {
+            "rows": [
+              {
+                "row": {
+                  "buttons": [
+                    {
+                      "text": "✅ APPROVE & PUBLISH",
+                      "additionalFields": {
+                        "type": "url",
+                        "url": "={{ $execution.resumeUrl }}?action=approve"
+                      }
+                    },
+                    {
+                      "text": "❌ REJECT",
+                      "additionalFields": {
+                        "type": "url",
+                        "url": "={{ $execution.resumeUrl }}?action=reject"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "cMKJjpljlUSsXdL9",
+          "name": "Telegram Jarvis Bot"
+        }
+      }
+    },
+    {
+      "id": "a1b2c3d4-0009",
+      "name": "Wait — For Approval",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1060, 360],
+      "parameters": {
+        "resume": "webhook",
+        "webhookSuffix": ""
+      },
+      "webhookId": "yt-content-approval"
+    },
+    {
+      "id": "a1b2c3d4-0010",
+      "name": "IF — Approved?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1300, 360],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": false,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "cond-approve",
+              "leftValue": "={{ $json.query.action }}",
+              "rightValue": "approve",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      }
+    },
+    {
+      "id": "a1b2c3d4-0011",
+      "name": "Blotato — Publish",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1540, 240],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.blotato.com/v1/posts",
+        "authentication": "none",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "=Bearer {{ $env.BLOTATO_API_KEY }}" },
+            { "name": "Content-Type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"accounts\": [40479, 47950, 32614, 35323],\n  \"text\": \"{{ $('Parse Claude Response').first().json.instagram_caption_en }}\",\n  \"schedule\": \"now\"\n}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "a1b2c3d4-0012",
+      "name": "Gmail — Confirm Published",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [1780, 240],
+      "parameters": {
+        "operation": "send",
+        "sendTo": "flinkgutt11@gmail.com",
+        "subject": "=✅ Published: {{ $('Parse Claude Response').first().json.youtube_title }}",
+        "message": "=<h2>✅ YouTube Content Published!</h2>\n<p><b>ID:</b> {{ $('Parse Claude Response').first().json.content_id }}</p>\n<p><b>Topic:</b> {{ $('Parse Claude Response').first().json.topic }}</p>\n<p><b>Title:</b> {{ $('Parse Claude Response').first().json.youtube_title }}</p>\n<p><b>Published to:</b> YouTube (35323), Instagram (47950), TikTok (40479), Facebook (32614)</p>\n<p><b>Date:</b> {{ $('Parse Claude Response').first().json.date }}</p>\n<hr>\n<h3>30-sec Hook</h3>\n<p>{{ $('Parse Claude Response').first().json.hook_30sec }}</p>\n<h3>Thumbnail Concept</h3>\n<p>{{ $('Parse Claude Response').first().json.thumbnail_concept }}</p>\n<h3>Script Outline</h3>\n<p>{{ $('Parse Claude Response').first().json.script_outline }}</p>",
+        "options": {
+          "isHtml": true
+        }
+      },
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "mgsv5KbVU9zQVpZ1",
+          "name": "Gmail 0Auth Jarvis"
+        }
+      }
+    },
+    {
+      "id": "a1b2c3d4-0013",
+      "name": "Telegram — Published",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [2020, 240],
+      "parameters": {
+        "resource": "message",
+        "operation": "sendMessage",
+        "chatId": "6463557010",
+        "text": "=✅ *Published!*\n\n🎬 *{{ $('Parse Claude Response').first().json.youtube_title }}*\n\nPosted to YouTube, Instagram, TikTok, Facebook.\nContent ID: `{{ $('Parse Claude Response').first().json.content_id }}`\n\nCheck Blotato dashboard for live status.",
+        "additionalFields": {
+          "parseMode": "Markdown"
+        }
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "cMKJjpljlUSsXdL9",
+          "name": "Telegram Jarvis Bot"
+        }
+      }
+    },
+    {
+      "id": "a1b2c3d4-0014",
+      "name": "Telegram — Rejected",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [1540, 480],
+      "parameters": {
+        "resource": "message",
+        "operation": "sendMessage",
+        "chatId": "6463557010",
+        "text": "=❌ *Content Rejected*\n\n_{{ $('Parse Claude Response').first().json.youtube_title }}_\n\nNot published. Content saved in Sheets with status: rejected.\n\nSend `/create [new topic]` to generate new content.",
+        "additionalFields": {
+          "parseMode": "Markdown"
+        }
+      },
+      "credentials": {
+        "telegramApi": {
+          "id": "cMKJjpljlUSsXdL9",
+          "name": "Telegram Jarvis Bot"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule — Monday 9am": {
+      "main": [
+        [{ "node": "Set Topic", "type": "main", "index": 0 }]
+      ]
+    },
+    "Telegram — Receive Topic": {
+      "main": [
+        [{ "node": "Set Topic", "type": "main", "index": 0 }]
+      ]
+    },
+    "Set Topic": {
+      "main": [
+        [{ "node": "Claude — Generate Content", "type": "main", "index": 0 }]
+      ]
+    },
+    "Claude — Generate Content": {
+      "main": [
+        [{ "node": "Parse Claude Response", "type": "main", "index": 0 }]
+      ]
+    },
+    "Parse Claude Response": {
+      "main": [
+        [
+          { "node": "Google Sheets — Log Content", "type": "main", "index": 0 },
+          { "node": "Pollo AI — Start Video", "type": "main", "index": 0 },
+          { "node": "Telegram — Send Preview", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Telegram — Send Preview": {
+      "main": [
+        [{ "node": "Wait — For Approval", "type": "main", "index": 0 }]
+      ]
+    },
+    "Wait — For Approval": {
+      "main": [
+        [{ "node": "IF — Approved?", "type": "main", "index": 0 }]
+      ]
+    },
+    "IF — Approved?": {
+      "main": [
+        [{ "node": "Blotato — Publish", "type": "main", "index": 0 }],
+        [{ "node": "Telegram — Rejected", "type": "main", "index": 0 }]
+      ]
+    },
+    "Blotato — Publish": {
+      "main": [
+        [{ "node": "Gmail — Confirm Published", "type": "main", "index": 0 }]
+      ]
+    },
+    "Gmail — Confirm Published": {
+      "main": [
+        [{ "node": "Telegram — Published", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Europe/Oslo"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "n8n.ujstudionorge.com"
+  },
+  "tags": [
+    { "name": "youtube" },
+    { "name": "content-automation" },
+    { "name": "uj-studio" }
+  ]
+}
