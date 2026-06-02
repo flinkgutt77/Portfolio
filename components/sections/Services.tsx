@@ -2,6 +2,10 @@ import { Heart, Cake, Users, Camera, Monitor, Sparkles } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import { services } from '@/lib/data'
 import FadeIn from '@/components/ui/FadeIn'
+import { getDict } from '@/lib/i18n'
+
+const s = getDict().services
+const sc = getDict().serviceCards
 
 const iconMap: Record<string, LucideIcon> = {
   Heart,
@@ -17,12 +21,11 @@ export default function Services() {
     <section id="services" className="py-28 px-6 bg-surface">
       {/* Header */}
       <FadeIn className="max-w-2xl mx-auto mb-20 text-center">
-        <p className="text-xs tracking-[0.4em] uppercase text-gold mb-4">WHAT I OFFER</p>
-        <h2 className="font-serif text-4xl md:text-6xl text-text-primary">My Services</h2>
+        <p className="text-xs tracking-[0.4em] uppercase text-gold mb-4">{s.label}</p>
+        <h2 className="font-serif text-4xl md:text-6xl text-text-primary">{s.heading}</h2>
         <div className="w-20 h-px bg-gold mx-auto mt-8" />
         <p className="text-text-muted text-sm mt-6 leading-relaxed max-w-xl mx-auto">
-          From intimate family moments to large-scale commercial productions — every project
-          delivered with the same passion and professionalism.
+          {s.subtext}
         </p>
       </FadeIn>
 
@@ -48,11 +51,11 @@ export default function Services() {
                   {Icon && <Icon size={26} className="text-gold mt-1" />}
                 </div>
                 <h3 className="font-serif text-xl text-text-primary">
-                  {service.name}
+                  {sc[service.id as keyof typeof sc]?.name ?? service.name}
                 </h3>
                 <div className="mt-auto pt-4 border-t border-border/50">
                   <span className="text-xs tracking-widest uppercase text-text-muted">
-                    Hover to explore →
+                    {s.hoverHint}
                   </span>
                 </div>
               </div>
@@ -65,13 +68,13 @@ export default function Services() {
                   </div>
                 )}
                 <h3 className="font-serif text-2xl text-gold leading-tight">
-                  {service.name}
+                  {sc[service.id as keyof typeof sc]?.name ?? service.name}
                 </h3>
                 <p className="text-text-muted text-sm leading-relaxed max-w-xs">
-                  {service.description}
+                  {sc[service.id as keyof typeof sc]?.description ?? service.description}
                 </p>
                 <span className="text-xs tracking-[0.3em] uppercase text-gold/60 mt-2">
-                  Get in Touch →
+                  {s.contactHint}
                 </span>
               </div>
             </div>

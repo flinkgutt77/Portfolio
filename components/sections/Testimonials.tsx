@@ -1,10 +1,12 @@
 'use client'
 
-import { testimonials } from '@/lib/data'
 import FadeIn from '@/components/ui/FadeIn'
+import { getDict } from '@/lib/i18n'
+
+const tm = getDict().testimonials
 
 export default function Testimonials() {
-  const doubled = [...testimonials, ...testimonials]
+  const doubled = [...tm.items, ...tm.items]
 
   return (
     <section id="testimonials" className="bg-surface py-24 px-6 overflow-hidden">
@@ -17,8 +19,8 @@ export default function Testimonials() {
 
       {/* Header */}
       <FadeIn className="text-center mb-12">
-        <p className="text-xs tracking-widest uppercase text-gold">TESTIMONIALS</p>
-        <h2 className="font-serif text-4xl md:text-5xl text-text-primary mt-4">What Clients Say</h2>
+        <p className="text-xs tracking-widest uppercase text-gold">{tm.label}</p>
+        <h2 className="font-serif text-4xl md:text-5xl text-text-primary mt-4">{tm.heading}</h2>
         <div className="w-16 h-px bg-gold mx-auto mt-6" />
       </FadeIn>
 

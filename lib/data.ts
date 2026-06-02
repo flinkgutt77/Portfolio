@@ -1,9 +1,11 @@
-// Nav links
+// Nav links — labels come from i18n, built at deploy time
+import { getDict } from '@/lib/i18n'
+const _nav = getDict().nav
 export const navLinks = [
-  { label: 'Services', href: '/#services' },
-  { label: 'Portfolio', href: '/#gallery' },
-  { label: 'About', href: '/#about' },
-  { label: 'Contact', href: '/contact' },
+  { label: _nav.services, href: '/#services' },
+  { label: _nav.portfolio, href: '/#gallery' },
+  { label: _nav.about,    href: '/#about' },
+  { label: _nav.contact,  href: '/contact' },
 ]
 
 // Services

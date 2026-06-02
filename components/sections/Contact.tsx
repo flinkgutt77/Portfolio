@@ -2,19 +2,10 @@
 
 import { useState } from 'react'
 import { toast } from 'sonner'
+import { getDict } from '@/lib/i18n'
 
-const serviceOptions = [
-  'Wedding Photography',
-  'Wedding Film',
-  'Birthday Photography',
-  'Family Portraits',
-  'Fashion Photography',
-  'Fashion Film',
-  'Advertisement Photography',
-  'Advertisement Film',
-  'Digital Signage',
-  'Other',
-]
+const c = getDict().contact
+const serviceOptions = c.serviceOptions
 
 export default function Contact() {
   const [name, setName] = useState('')
@@ -38,14 +29,14 @@ export default function Contact() {
         body: JSON.stringify({ name, email, phone, service, message }),
       })
       if (!res.ok) throw new Error('Failed to send')
-      toast.success("Message sent! I'll be in touch soon.")
+      toast.success(c.successMsg)
       setName('')
       setEmail('')
       setPhone('')
       setService('')
       setMessage('')
     } catch {
-      toast.error('Something went wrong. Please try again.')
+      toast.error(c.errorMsg)
     } finally {
       setLoading(false)
     }
@@ -55,12 +46,10 @@ export default function Contact() {
     <section id="contact" className="bg-background py-24 px-6">
       {/* Header */}
       <div className="text-center mb-12">
-        <p className="text-xs tracking-widest uppercase text-gold">GET IN TOUCH</p>
-        <h2 className="font-serif text-4xl md:text-5xl text-text-primary mt-4">Start a Project</h2>
+        <p className="text-xs tracking-widest uppercase text-gold">{c.label}</p>
+        <h2 className="font-serif text-4xl md:text-5xl text-text-primary mt-4">{c.heading}</h2>
         <div className="w-16 h-px bg-gold mx-auto mt-6" />
-        <p className="text-text-muted text-center max-w-xl mx-auto mt-4">
-          Whether it&apos;s a wedding, campaign, or AI workflow — let&apos;s create something remarkable together.
-        </p>
+        <p className="text-text-muted text-center max-w-xl mx-auto mt-4">{c.subtext}</p>
       </div>
 
       {/* Form */}
@@ -68,26 +57,26 @@ export default function Contact() {
         {/* Name + Email row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="name" className={labelClass}>Name</label>
+            <label htmlFor="name" className={labelClass}>{c.nameLbl}</label>
             <input
               id="name"
               type="text"
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Your name"
+              placeholder={c.namePh}
               className={inputClass}
             />
           </div>
           <div>
-            <label htmlFor="email" className={labelClass}>Email</label>
+            <label htmlFor="email" className={labelClass}>{c.emailLbl}</label>
             <input
               id="email"
               type="email"
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="your@email.com"
+              placeholder={c.emailPh}
               className={inputClass}
             />
           </div>
@@ -95,27 +84,27 @@ export default function Contact() {
 
         {/* Phone */}
         <div>
-          <label htmlFor="phone" className={labelClass}>Phone</label>
+          <label htmlFor="phone" className={labelClass}>{c.phoneLbl}</label>
           <input
             id="phone"
             type="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            placeholder="+47 000 00 000"
+            placeholder={c.phonePh}
             className={inputClass}
           />
         </div>
 
         {/* Service */}
         <div>
-          <label htmlFor="service" className={labelClass}>Service</label>
+          <label htmlFor="service" className={labelClass}>{c.serviceLbl}</label>
           <select
             id="service"
             value={service}
             onChange={(e) => setService(e.target.value)}
             className={inputClass}
           >
-            <option value="" disabled>Select a service</option>
+            <option value="" disabled>{c.servicePh}</option>
             {serviceOptions.map((opt) => (
               <option key={opt} value={opt}>{opt}</option>
             ))}
@@ -124,14 +113,14 @@ export default function Contact() {
 
         {/* Message */}
         <div>
-          <label htmlFor="message" className={labelClass}>Message</label>
+          <label htmlFor="message" className={labelClass}>{c.messageLbl}</label>
           <textarea
             id="message"
             rows={5}
             required
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Tell me about your project..."
+            placeholder={c.messagePh}
             className={inputClass}
           />
         </div>
@@ -142,7 +131,7 @@ export default function Contact() {
           disabled={loading}
           className="w-full bg-gold text-background text-sm tracking-widest uppercase py-4 hover:bg-gold-hover transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {loading ? 'Sending...' : 'Send Message'}
+          {loading ? c.submitting : c.submit}
         </button>
       </form>
     </section>

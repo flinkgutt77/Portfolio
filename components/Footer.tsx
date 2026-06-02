@@ -1,4 +1,7 @@
 import { navLinks, socialLinks } from '@/lib/data'
+import { getDict } from '@/lib/i18n'
+
+const f = getDict().footer
 
 // Inline SVG icons for social platforms (lucide-react v1+ removed brand icons)
 const SocialIcon = ({ name, size = 18 }: { name: string; size?: number }) => {
@@ -87,7 +90,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-center text-text-muted text-sm">
-          &copy; {new Date().getFullYear()} UJ Studio Norge. All rights reserved.
+          &copy; {new Date().getFullYear()} UJ Studio Norge. {f.rights}
         </p>
       </div>
     </footer>

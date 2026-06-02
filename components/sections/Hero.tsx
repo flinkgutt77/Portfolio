@@ -2,6 +2,9 @@
 
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
+import { getDict } from '@/lib/i18n'
+
+const h = getDict().hero
 
 export default function Hero() {
   return (
@@ -41,18 +44,16 @@ export default function Hero() {
         >
           <p className="text-gold uppercase tracking-[0.4em] text-xs sm:text-sm font-sans"
             style={{ textShadow: '0 2px 12px rgba(0,0,0,0.8)' }}>
-            Photography &nbsp;·&nbsp; Cinematography &nbsp;·&nbsp; Digital Signage
+            {h.tagline}
           </p>
           <div className="w-20 h-px bg-gold mx-auto my-8" />
           <h1
             className="font-serif font-normal leading-[1.1] text-white text-5xl md:text-7xl lg:text-8xl"
             style={{ textShadow: '0 4px 30px rgba(0,0,0,0.9)' }}
           >
-            Crafting Visual
+            {h.heading[0]}
             <br />
-            <em className="text-gold not-italic">Stories</em> That Last
-            <br />
-            Forever
+            <em className="text-gold not-italic">{h.heading[1]}</em> {h.heading[2]}
           </h1>
         </motion.div>
 
@@ -66,7 +67,7 @@ export default function Hero() {
             className="text-white/80 text-sm md:text-base mt-8 max-w-2xl mx-auto tracking-wider leading-relaxed"
             style={{ textShadow: '0 2px 12px rgba(0,0,0,0.9)' }}
           >
-            Wedding &nbsp;·&nbsp; Birthday &nbsp;·&nbsp; Portrait &nbsp;·&nbsp; Advertising &nbsp;·&nbsp; Digital Signage
+            {h.subtext}
           </p>
         </motion.div>
 
@@ -81,13 +82,13 @@ export default function Hero() {
               href="#gallery"
               className="border border-gold text-gold hover:bg-gold hover:text-background px-8 py-3 transition-all duration-300 text-sm tracking-widest uppercase focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-2"
             >
-              View Portfolio
+              {h.cta1}
             </a>
             <a
               href="#contact"
               className="border border-border text-text-muted hover:border-gold hover:text-gold px-8 py-3 transition-all duration-300 text-sm tracking-widest uppercase focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-2"
             >
-              Get in Touch
+              {h.cta2}
             </a>
           </div>
         </motion.div>
