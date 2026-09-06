@@ -1,4 +1,7 @@
 import FadeIn from '@/components/ui/FadeIn'
+import { getDict } from '@/lib/i18n'
+
+const f = getDict().films
 
 const filmCards = [
   { title: 'DK Logo Animation', client: 'Brand Film', year: '2025', videoId: '1edAEaJDuBg' },
@@ -17,13 +20,13 @@ export default function Films() {
     <section id="films" className="bg-surface py-24 px-6">
       {/* Header */}
       <FadeIn className="text-center mb-16">
-        <p className="text-xs tracking-[0.4em] uppercase text-gold">CINEMATOGRAPHY</p>
+        <p className="text-xs tracking-[0.4em] uppercase text-gold">{f.label}</p>
         <h2 className="font-serif text-4xl md:text-5xl text-text-primary mt-4">
-          Films & Showreel
+          {f.heading}
         </h2>
         <div className="w-16 h-px bg-gold mx-auto mt-6" />
         <p className="text-text-muted text-center max-w-xl mx-auto mt-4">
-          Cinematic stories for weddings, fashion, brands and beyond.
+          {f.subtext}
         </p>
       </FadeIn>
 
@@ -74,7 +77,7 @@ export default function Films() {
                 <h3 className="font-serif text-base text-text-primary group-hover:text-gold transition-colors">
                   {card.title}
                 </h3>
-                <p className="text-text-muted text-xs mt-1">{card.client}</p>
+                <p className="text-text-muted text-xs mt-1">{f.clientLabels[card.client as keyof typeof f.clientLabels] ?? card.client}</p>
               </div>
               <span className="text-gold text-xs tracking-widest shrink-0 ml-4 mt-1">{card.year}</span>
             </div>
@@ -93,7 +96,7 @@ export default function Films() {
           <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
             <path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.04 0 12 0 12s0 3.96.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.96 24 12 24 12s0-3.96-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
           </svg>
-          View Full Channel
+          {f.channelCta}
         </a>
       </div>
     </section>

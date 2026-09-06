@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import { Toaster } from "sonner";
-import { siteUrl } from "@/lib/i18n";
+import { getDict, locale, siteUrl } from "@/lib/i18n";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -16,15 +16,15 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
+const site = getDict().site;
+
 export const metadata: Metadata = {
-  title: "UJ Studio Norge | Photography · Cinematography · Digital Signage",
-  description:
-    "UJ Studio Norge — professional photography, cinematography, fashion films, advertisement production and digital signage services based in Norway.",
+  title: site.title,
+  description: site.description,
   alternates: { canonical: siteUrl },
   openGraph: {
-    title: "UJ Studio Norge | Photography · Cinematography · Digital Signage",
-    description:
-      "UJ Studio Norge — professional photography, cinematography, fashion films, advertisement production and digital signage services based in Norway.",
+    title: site.title,
+    description: site.description,
     type: "website",
     url: siteUrl,
     siteName: "UJ Studio Norge",
@@ -33,36 +33,23 @@ export const metadata: Metadata = {
         url: `${siteUrl}/A32I0135.jpg`,
         width: 1200,
         height: 630,
-        alt: "UJ Studio Norge — Photography & Cinematography",
+        alt: site.ogImageAlt,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "UJ Studio Norge | Photography · Cinematography · Digital Signage",
-    description:
-      "Professional photography, cinematography, fashion films, advertisement production and digital signage based in Norway.",
+    title: site.title,
+    description: site.twitterDescription,
   },
-  keywords: [
-    "photography Norge",
-    "fotograf Norge",
-    "wedding photography Norway",
-    "bryllupsfotograf",
-    "cinematography Norway",
-    "fashion photography",
-    "advertisement photography",
-    "digital signage Norway",
-    "UJ Studio",
-    "Umar Javed photographer",
-    "filming Norway",
-  ],
+  keywords: [...site.keywords],
 };
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'UJ Studio Norge',
-  description: 'Professional photography, cinematography, fashion films, advertisement production and digital signage based in Norway.',
+  description: site.twitterDescription,
   url: siteUrl,
   image: `${siteUrl}/A32I0135.jpg`,
   address: { '@type': 'PostalAddress', addressCountry: 'NO' },
@@ -71,13 +58,7 @@ const jsonLd = {
     'https://www.facebook.com/profile.php?id=61567685248522',
     'https://youtube.com/@umarjaved77',
   ],
-  serviceType: [
-    'Wedding Photography',
-    'Cinematography',
-    'Fashion Photography',
-    'Advertisement Photography',
-    'Digital Signage',
-  ],
+  serviceType: site.serviceTypes,
 }
 
 export default function RootLayout({
@@ -87,7 +68,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang={locale}
       className={`${playfair.variable} ${dmSans.variable} h-full antialiased`}
     >
       <head>
