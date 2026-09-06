@@ -45,6 +45,12 @@ const dict = {
       cta: 'Work With Me',
     },
 
+    // Gallery / homepage portfolio section
+    gallery: {
+      label: 'Portfolio',
+      heading: 'My Work',
+    },
+
     // Services section
     services: {
       label: 'What I Offer',
@@ -159,6 +165,11 @@ const dict = {
         { value: '∞', label: 'Lidenskap for faget' },
       ],
       cta: 'Jobb med meg',
+    },
+
+    gallery: {
+      label: 'Portefølje',
+      heading: 'Mitt Arbeid',
     },
 
     services: {
