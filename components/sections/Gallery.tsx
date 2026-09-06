@@ -7,6 +7,9 @@ import 'yet-another-react-lightbox/styles.css'
 import { Play } from 'lucide-react'
 import { galleryItems, galleryCategories } from '@/lib/data'
 import FadeIn from '@/components/ui/FadeIn'
+import { getDict } from '@/lib/i18n'
+
+const g = getDict().gallery
 
 export default function Gallery() {
   const [activeFilter, setActiveFilter] = useState('All')
@@ -38,9 +41,9 @@ export default function Gallery() {
     <section id="gallery" className="bg-background py-24 px-6">
       {/* Header */}
       <FadeIn className="text-center mb-12">
-        <p className="text-xs tracking-widest uppercase text-gold">PORTFOLIO</p>
+        <p className="text-xs tracking-widest uppercase text-gold">{g.label}</p>
         <h2 className="font-serif text-4xl md:text-5xl text-text-primary mt-4">
-          My Work
+          {g.heading}
         </h2>
         <div className="w-16 h-px bg-gold mx-auto mt-6" />
       </FadeIn>

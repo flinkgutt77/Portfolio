@@ -58,7 +58,7 @@ export default async function PortfolioCategoryPage({
       <Navbar />
       <main className="flex-1 bg-background py-32 px-6">
         <FadeIn className="text-center mb-12 max-w-2xl mx-auto">
-          <p className="text-xs tracking-[0.4em] uppercase text-gold">PORTFOLIO</p>
+          <p className="text-xs tracking-[0.4em] uppercase text-gold">{getDict().gallery.label}</p>
           <h1 className="font-serif text-4xl md:text-5xl text-text-primary mt-4">
             {copy.title.split('|')[0].trim()}
           </h1>
