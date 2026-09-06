@@ -9,6 +9,24 @@ export const locale: Locale =
  * URL (metadata, OG, sitemap, JSON-LD) derived from this rather than hardcoded. */
 export const siteUrl = locale === 'nb' ? 'https://ujstudio.no' : 'https://ujstudionorge.com'
 
+/** The two domains are the same content in different languages — always both,
+ * regardless of which locale is currently building. */
+const DOMAINS = { en: 'https://ujstudionorge.com', nb: 'https://ujstudio.no' } as const
+
+/**
+ * hreflang alternates for a page that exists on both domains. Pass the path
+ * as it appears on each locale's domain (slugs can differ, e.g. portfolio
+ * category pages) — same path on both is fine for pages like "/" or "/contact".
+ * ujstudio.no (nb) is treated as x-default since it's the primary market.
+ */
+export function hreflangAlternates(nbPath: string, enPath: string) {
+  return {
+    en: `${DOMAINS.en}${enPath}`,
+    nb: `${DOMAINS.nb}${nbPath}`,
+    'x-default': `${DOMAINS.nb}${nbPath}`,
+  }
+}
+
 // ─── Full dictionary ────────────────────────────────────────────────────────
 
 const dict = {

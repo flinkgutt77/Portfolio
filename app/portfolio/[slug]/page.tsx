@@ -6,7 +6,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FadeIn from '@/components/ui/FadeIn'
 import { galleryItems, portfolioCategories } from '@/lib/data'
-import { getDict, locale, siteUrl } from '@/lib/i18n'
+import { getDict, hreflangAlternates, locale, siteUrl } from '@/lib/i18n'
 
 function findBySlug(slug: string) {
   return portfolioCategories.find(p => p.slug[locale] === slug)
@@ -31,7 +31,10 @@ export async function generateMetadata({
   return {
     title: copy.title,
     description: copy.description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: hreflangAlternates(`/portfolio/${entry.slug.nb}`, `/portfolio/${entry.slug.en}`),
+    },
     openGraph: {
       title: copy.title,
       description: copy.description,
