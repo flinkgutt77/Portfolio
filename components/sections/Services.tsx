@@ -1,8 +1,9 @@
 import { Heart, Cake, Users, Camera, Monitor, Sparkles } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
-import { services } from '@/lib/data'
+import Link from 'next/link'
+import { services, portfolioCategories } from '@/lib/data'
 import FadeIn from '@/components/ui/FadeIn'
-import { getDict } from '@/lib/i18n'
+import { getDict, locale } from '@/lib/i18n'
 
 const s = getDict().services
 const sc = getDict().serviceCards
@@ -33,10 +34,13 @@ export default function Services() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
         {services.map((service, i) => {
           const Icon = iconMap[service.icon]
+          const category = portfolioCategories.find(p => p.id === service.id)
+          const href = category ? `/portfolio/${category.slug[locale]}` : undefined
           return (
-            <div
+            <Link
               key={service.id}
-              className="bg-surface flex flex-col relative overflow-hidden group cursor-default"
+              href={href ?? '#'}
+              className="bg-surface flex flex-col relative overflow-hidden group"
               style={{ minHeight: '280px' }}
             >
               {/* Top gold accent line slides in on hover */}
@@ -74,10 +78,10 @@ export default function Services() {
                   {sc[service.id as keyof typeof sc]?.description ?? service.description}
                 </p>
                 <span className="text-xs tracking-[0.3em] uppercase text-gold/60 mt-2">
-                  {s.contactHint}
+                  {s.viewGalleryHint}
                 </span>
               </div>
-            </div>
+            </Link>
           )
         })}
       </div>

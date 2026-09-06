@@ -72,6 +72,25 @@ export const galleryItems: GalleryItem[] = [
 // Gallery filter categories
 export const galleryCategories = ['All', 'Weddings', 'Birthdays', 'Portraits', 'Fashion', 'Ads', 'Signage']
 
+// Dedicated per-category portfolio pages — id matches `services` ids and
+// lib/i18n.ts's `portfolioPages` dict; category matches galleryItems' `category`
+// field for filtering. slug is locale-specific (SEO landing pages, e.g.
+// /portfolio/wedding on ujstudionorge.com vs /portfolio/bryllup on ujstudio.no).
+export type PortfolioCategory = {
+  id: string
+  category: string
+  slug: { en: string; nb: string }
+}
+
+export const portfolioCategories: PortfolioCategory[] = [
+  { id: 'wedding',       category: 'weddings',  slug: { en: 'wedding',       nb: 'bryllup' } },
+  { id: 'birthday',      category: 'birthdays', slug: { en: 'birthday',      nb: 'bursdag' } },
+  { id: 'portrait',      category: 'portraits', slug: { en: 'portrait',      nb: 'portrett' } },
+  { id: 'fashion',       category: 'fashion',   slug: { en: 'fashion',       nb: 'mote' } },
+  { id: 'advertisement', category: 'ads',       slug: { en: 'advertisement', nb: 'reklame' } },
+  { id: 'signage',       category: 'signage',   slug: { en: 'signage',       nb: 'skiltning' } },
+]
+
 // Testimonials
 export type Testimonial = {
   id: string

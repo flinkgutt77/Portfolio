@@ -5,6 +5,10 @@ export type Locale = 'en' | 'nb'
 export const locale: Locale =
   (process.env.NEXT_PUBLIC_LOCALE as Locale) === 'nb' ? 'nb' : 'en'
 
+/** Canonical domain for the site currently being built — keep every absolute
+ * URL (metadata, OG, sitemap, JSON-LD) derived from this rather than hardcoded. */
+export const siteUrl = locale === 'nb' ? 'https://ujstudio.no' : 'https://ujstudionorge.com'
+
 // ─── Full dictionary ────────────────────────────────────────────────────────
 
 const dict = {
@@ -48,6 +52,7 @@ const dict = {
       subtext: 'From intimate family moments to large-scale commercial productions — every project delivered with the same passion and professionalism.',
       hoverHint: 'Hover to explore →',
       contactHint: 'Get in Touch →',
+      viewGalleryHint: 'View Gallery →',
     },
 
     // Service cards (matched to lib/data.ts ids)
@@ -110,6 +115,19 @@ const dict = {
     footer: {
       rights: 'All rights reserved.',
     },
+
+    // Dedicated per-category portfolio pages (SEO landing pages, matched to lib/data.ts portfolioCategories ids)
+    portfolioPages: {
+      categories: {
+        wedding:       { title: 'Wedding Photography & Film in Norway | UJ Studio Norge',       description: 'Timeless wedding photography and cinematic films across Norway. Every emotion beautifully preserved by UJ Studio Norge.' },
+        birthday:      { title: 'Birthday Photography & Film in Norway | UJ Studio Norge',      description: 'Vibrant birthday photography and film coverage in Norway — candid moments to cinematic highlights.' },
+        portrait:      { title: 'Family Portrait Photography in Norway | UJ Studio Norge',      description: 'Authentic, warm family portrait photography in Norway that captures real connection.' },
+        fashion:       { title: 'Fashion Photography & Film in Norway | UJ Studio Norge',       description: 'Striking fashion editorials and cinematic lookbook films in Norway by UJ Studio Norge.' },
+        advertisement: { title: 'Advertisement Photography & Film in Norway | UJ Studio Norge', description: 'High-impact advertisement photography and brand films for businesses in Norway.' },
+        signage:       { title: 'Digital Signage Solutions in Norway | UJ Studio Norge',        description: 'Digital signage design and installation services for businesses across Norway.' },
+      },
+      backLink: 'View full portfolio',
+    },
   },
 
   // ── Norwegian (Bokmål) ──────────────────────────────────────────────────
@@ -149,6 +167,7 @@ const dict = {
       subtext: 'Fra intime familieøyeblikk til store kommersielle produksjoner — hvert prosjekt levert med samme lidenskap og profesjonalitet.',
       hoverHint: 'Hold over for å utforske →',
       contactHint: 'Ta kontakt →',
+      viewGalleryHint: 'Se galleri →',
     },
 
     serviceCards: {
@@ -206,6 +225,18 @@ const dict = {
 
     footer: {
       rights: 'Alle rettigheter forbeholdt.',
+    },
+
+    portfolioPages: {
+      categories: {
+        wedding:       { title: 'Bryllupsfotograf i Norge | UJ Studio Norge',        description: 'Tidløse bryllupsbilder og kinematografisk film i Norge — hvert øyeblikk vakkert bevart av UJ Studio Norge.' },
+        birthday:      { title: 'Bursdagsfotografering i Norge | UJ Studio Norge',   description: 'Levende bursdagsfotografering og film i Norge — fra spontane øyeblikk til filmiske høydepunkter.' },
+        portrait:      { title: 'Portrettfotografering i Norge | UJ Studio Norge',   description: 'Autentiske, varme familieportretter i Norge som fanger ekte samhold.' },
+        fashion:       { title: 'Motefotograf i Norge | UJ Studio Norge',            description: 'Slående motebilder og kinematografiske lookbook-filmer i Norge av UJ Studio Norge.' },
+        advertisement: { title: 'Reklamefotograf i Norge | UJ Studio Norge',         description: 'Slagkraftig reklamefotografering og merkevarefilm for bedrifter i Norge.' },
+        signage:       { title: 'Digital Skiltning i Norge | UJ Studio Norge',       description: 'Design og installasjon av digital skiltning for bedrifter i hele Norge.' },
+      },
+      backLink: 'Se hele porteføljen',
     },
   },
 } as const

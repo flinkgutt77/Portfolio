@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import { Toaster } from "sonner";
+import { siteUrl } from "@/lib/i18n";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -19,16 +20,17 @@ export const metadata: Metadata = {
   title: "UJ Studio Norge | Photography · Cinematography · Digital Signage",
   description:
     "UJ Studio Norge — professional photography, cinematography, fashion films, advertisement production and digital signage services based in Norway.",
+  alternates: { canonical: siteUrl },
   openGraph: {
     title: "UJ Studio Norge | Photography · Cinematography · Digital Signage",
     description:
       "UJ Studio Norge — professional photography, cinematography, fashion films, advertisement production and digital signage services based in Norway.",
     type: "website",
-    url: "https://ujstudionorge.com",
+    url: siteUrl,
     siteName: "UJ Studio Norge",
     images: [
       {
-        url: "https://ujstudionorge.com/A32I0135.jpg",
+        url: `${siteUrl}/A32I0135.jpg`,
         width: 1200,
         height: 630,
         alt: "UJ Studio Norge — Photography & Cinematography",
@@ -61,8 +63,8 @@ const jsonLd = {
   '@type': 'LocalBusiness',
   name: 'UJ Studio Norge',
   description: 'Professional photography, cinematography, fashion films, advertisement production and digital signage based in Norway.',
-  url: 'https://ujstudionorge.com',
-  image: 'https://ujstudionorge.com/A32I0135.jpg',
+  url: siteUrl,
+  image: `${siteUrl}/A32I0135.jpg`,
   address: { '@type': 'PostalAddress', addressCountry: 'NO' },
   sameAs: [
     'https://instagram.com/ujstudionorge',
