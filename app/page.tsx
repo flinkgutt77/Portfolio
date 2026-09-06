@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Hero from '@/components/sections/Hero'
@@ -8,6 +9,14 @@ import Signage from '@/components/sections/Signage'
 import About from '@/components/sections/About'
 import Testimonials from '@/components/sections/Testimonials'
 import Contact from '@/components/sections/Contact'
+import { hreflangAlternates, siteUrl } from '@/lib/i18n'
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: siteUrl,
+    languages: hreflangAlternates('/', '/'),
+  },
+}
 
 export default function Home() {
   return (

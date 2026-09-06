@@ -2,14 +2,17 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Contact from '@/components/sections/Contact'
-import { getDict, siteUrl } from '@/lib/i18n'
+import { getDict, hreflangAlternates, siteUrl } from '@/lib/i18n'
 
 const c = getDict().contact
 
 export const metadata: Metadata = {
   title: c.pageTitle,
   description: c.pageDescription,
-  alternates: { canonical: `${siteUrl}/contact` },
+  alternates: {
+    canonical: `${siteUrl}/contact`,
+    languages: hreflangAlternates('/contact', '/contact'),
+  },
   openGraph: {
     title: c.pageTitle,
     description: c.pageOgDescription,
