@@ -13,6 +13,20 @@ export const siteUrl = locale === 'nb' ? 'https://ujstudio.no' : 'https://ujstud
 
 const dict = {
   en: {
+    // Site-level metadata (<title>, meta description, OG, JSON-LD) — app/layout.tsx
+    site: {
+      title: 'UJ Studio Norge | Photography · Cinematography · Digital Signage',
+      description: 'UJ Studio Norge — professional photography, cinematography, fashion films, advertisement production and digital signage services based in Norway.',
+      twitterDescription: 'Professional photography, cinematography, fashion films, advertisement production and digital signage based in Norway.',
+      ogImageAlt: 'UJ Studio Norge — Photography & Cinematography',
+      keywords: [
+        'photography Norge', 'fotograf Norge', 'wedding photography Norway', 'bryllupsfotograf',
+        'cinematography Norway', 'fashion photography', 'advertisement photography',
+        'digital signage Norway', 'UJ Studio', 'Umar Javed photographer', 'filming Norway',
+      ],
+      serviceTypes: ['Wedding Photography', 'Cinematography', 'Fashion Photography', 'Advertisement Photography', 'Digital Signage'],
+    },
+
     // Navbar
     nav: {
       services: 'Services',
@@ -71,6 +85,68 @@ const dict = {
       signage:       { name: 'Digital Signage',                     description: 'From signage board design to digital screen installation and advertising — complete signage solutions for your business.' },
     },
 
+    // AI Agents section
+    aiAgents: {
+      label: 'AI Automation',
+      heading: 'Automate. Integrate. Scale.',
+      subtext: 'Leverage AI agent workflows to eliminate repetitive tasks, streamline client management, and scale your operations without scaling your team.',
+      useCases: {
+        onboarding:  { title: 'Client Onboarding',        description: 'Automate inquiry handling, contract sending, invoice generation, and follow-up sequences so new clients onboard themselves.' },
+        social:      { title: 'Social Media Workflow',    description: 'AI-powered content planning, caption writing, scheduling, and analytics reporting across Instagram, Facebook, and LinkedIn.' },
+        crm:         { title: 'CRM & Booking Flows',      description: 'Intelligent lead tracking, appointment scheduling, reminder sequences, and CRM updates — running 24/7 without manual effort.' },
+      },
+      ctaText: 'Ready to automate your workflow?',
+      ctaButton: "Let's Talk AI",
+    },
+
+    // Films section
+    films: {
+      label: 'Cinematography',
+      heading: 'Films & Showreel',
+      subtext: 'Cinematic stories for weddings, fashion, brands and beyond.',
+      channelCta: 'View Full Channel',
+      clientLabels: {
+        'Brand Film': 'Brand Film',
+        'Showreel': 'Showreel',
+        'Fashion Film': 'Fashion Film',
+        'Portrait Film': 'Portrait Film',
+        'Cinematic Short': 'Cinematic Short',
+        'Behind the Scenes': 'Behind the Scenes',
+      },
+    },
+
+    // Digital signage section
+    signage: {
+      label: 'Signage & Display',
+      headingLine1: 'Make Your Brand',
+      headingEm: 'Impossible',
+      headingRest: 'to Ignore',
+      subtext: 'From bold storefront signage boards to dynamic digital display networks — we design, install, and manage complete signage solutions that elevate your brand and captivate your audience around the clock.',
+      images: {
+        digitalTitle: 'Digital Display Screens',
+        digitalTag: 'DYNAMIC · CONNECTED · SMART',
+        physicalTitle: 'Physical Signage Boards',
+        physicalTag: 'BOLD · DURABLE · IMPACTFUL',
+      },
+      services: {
+        design:      { title: 'Design & Branding',           description: 'Custom visual design tailored to your brand identity — from concept to final artwork.' },
+        screen:      { title: 'Screen Installation',          description: 'Professional installation of indoor and outdoor digital display screens for any space.' },
+        content:     { title: 'Content Management',           description: 'Scheduled content updates, playlist management, and remote control of your displays.' },
+        adNetwork:   { title: 'Ad Network Management',        description: 'Run targeted advertising campaigns across your digital signage network with analytics.' },
+        boards:      { title: 'Physical Signage Boards',      description: 'Eye-catching printed and illuminated signage boards for storefronts and exhibitions.' },
+        led:         { title: 'LED & Illuminated Displays',   description: 'High-impact LED panels and backlit signage that commands attention day and night.' },
+      },
+      stats: [
+        { number: '10+', label: 'Years Experience' },
+        { number: 'Custom', label: 'Design & Branding' },
+        { number: 'Indoor', label: 'Outdoor Signage' },
+        { number: '24/7', label: 'Content Support' },
+      ],
+      ctaHeading: 'Ready to make your brand stand out?',
+      ctaSubtext: 'Get a free consultation and custom quote for your signage project.',
+      ctaButton: 'Get a Free Quote',
+    },
+
     // Testimonials
     testimonials: {
       label: 'Testimonials',
@@ -86,6 +162,9 @@ const dict = {
 
     // Contact form
     contact: {
+      pageTitle: 'Contact | UJ Studio Norge',
+      pageDescription: 'Get in touch with UJ Studio Norge — book a session for wedding photography, cinematography, fashion films, advertisement production or digital signage.',
+      pageOgDescription: 'Get in touch with UJ Studio Norge — book a session for wedding photography, cinematography, fashion films, or digital signage.',
       label: 'Get in Touch',
       heading: 'Start a Project',
       subtext: "Whether it's a wedding, campaign, or AI workflow — let's create something remarkable together.",
@@ -138,6 +217,18 @@ const dict = {
 
   // ── Norwegian (Bokmål) ──────────────────────────────────────────────────
   nb: {
+    site: {
+      title: 'UJ Studio Norge | Fotografi · Film · Digital Skiltning',
+      description: 'UJ Studio Norge — profesjonell fotografering, filmproduksjon, motefilm, reklameproduksjon og digital skiltning i Norge.',
+      twitterDescription: 'Profesjonell fotografering, filmproduksjon, motefilm, reklameproduksjon og digital skiltning i Norge.',
+      ogImageAlt: 'UJ Studio Norge — Fotografi & Filmproduksjon',
+      keywords: [
+        'fotograf Norge', 'bryllupsfotograf', 'filmproduksjon Norge', 'motefotografering',
+        'reklamefotografering', 'digital skiltning Norge', 'UJ Studio', 'Umar Javed fotograf', 'filming Norge',
+      ],
+      serviceTypes: ['Bryllupsfotografering', 'Filmproduksjon', 'Motefotografering', 'Reklamefotografering', 'Digital Skiltning'],
+    },
+
     nav: {
       services: 'Tjenester',
       portfolio: 'Portefølje',
@@ -190,6 +281,65 @@ const dict = {
       signage:       { name: 'Digital Skiltning',          description: 'Fra skiltdesign til digitale skjerminstallasjoner og reklame — komplette skiltsystemer for din bedrift.' },
     },
 
+    aiAgents: {
+      label: 'AI-automatisering',
+      heading: 'Automatiser. Integrer. Skaler.',
+      subtext: 'Bruk AI-agent-arbeidsflyter til å eliminere repetitive oppgaver, effektivisere kundehåndtering og skalere driften uten å skalere teamet ditt.',
+      useCases: {
+        onboarding:  { title: 'Kundeoppstart',              description: 'Automatiser henvendelser, kontraktsending, fakturagenerering og oppfølgingssekvenser slik at nye kunder onboardes selv.' },
+        social:      { title: 'Arbeidsflyt for sosiale medier', description: 'AI-drevet innholdsplanlegging, tekstforfatting, publisering og analyserapportering på tvers av Instagram, Facebook og LinkedIn.' },
+        crm:         { title: 'CRM og bookingflyt',          description: 'Intelligent leadsporing, timebestilling, påminnelsessekvenser og CRM-oppdateringer — som kjører døgnet rundt uten manuelt arbeid.' },
+      },
+      ctaText: 'Klar til å automatisere arbeidsflyten din?',
+      ctaButton: 'La oss snakke om AI',
+    },
+
+    films: {
+      label: 'Film',
+      heading: 'Filmer & Showreel',
+      subtext: 'Filmatiske historier fra bryllup, mote, merkevarer og mer.',
+      channelCta: 'Se hele kanalen',
+      clientLabels: {
+        'Brand Film': 'Merkevarefilm',
+        'Showreel': 'Showreel',
+        'Fashion Film': 'Motefilm',
+        'Portrait Film': 'Portrettfilm',
+        'Cinematic Short': 'Kinematografisk kortfilm',
+        'Behind the Scenes': 'Bak kulissene',
+      },
+    },
+
+    signage: {
+      label: 'Skilt & Display',
+      headingLine1: 'Gjør Merkevaren Din',
+      headingEm: 'Umulig',
+      headingRest: 'å Ignorere',
+      subtext: 'Fra dristige skiltbrett i butikkfronter til dynamiske digitale skjermnettverk — vi designer, installerer og drifter komplette skiltløsninger som løfter merkevaren din og fanger publikummet ditt døgnet rundt.',
+      images: {
+        digitalTitle: 'Digitale Skjermer',
+        digitalTag: 'DYNAMISK · TILKOBLET · SMART',
+        physicalTitle: 'Fysiske Skiltbrett',
+        physicalTag: 'DRISTIG · HOLDBAR · SLAGKRAFTIG',
+      },
+      services: {
+        design:      { title: 'Design & Merkevarebygging',   description: 'Skreddersydd visuelt design tilpasset merkevareidentiteten din — fra konsept til ferdig produksjon.' },
+        screen:      { title: 'Skjerminstallasjon',           description: 'Profesjonell installasjon av digitale skjermer innendørs og utendørs for ethvert rom.' },
+        content:     { title: 'Innholdsstyring',              description: 'Planlagte innholdsoppdateringer, spillelistestyring og fjernstyring av skjermene dine.' },
+        adNetwork:   { title: 'Annonsenettverk',              description: 'Kjør målrettede annonsekampanjer på tvers av det digitale skiltnettverket ditt med analyse.' },
+        boards:      { title: 'Fysiske Skiltbrett',           description: 'Iøynefallende trykte og opplyste skiltbrett for butikkfronter og utstillinger.' },
+        led:         { title: 'LED og Opplyste Skjermer',     description: 'Slagkraftige LED-paneler og bakbelyst skilting som fanger oppmerksomheten dag og natt.' },
+      },
+      stats: [
+        { number: '10+', label: 'Års Erfaring' },
+        { number: 'Skreddersydd', label: 'Design & Merkevarebygging' },
+        { number: 'Innendørs', label: 'Utendørs Skilting' },
+        { number: '24/7', label: 'Innholdsstøtte' },
+      ],
+      ctaHeading: 'Klar til å skille deg ut?',
+      ctaSubtext: 'Få en gratis konsultasjon og et skreddersydd tilbud for skiltprosjektet ditt.',
+      ctaButton: 'Få et gratis tilbud',
+    },
+
     testimonials: {
       label: 'Anmeldelser',
       heading: 'Hva kundene sier',
@@ -203,6 +353,9 @@ const dict = {
     },
 
     contact: {
+      pageTitle: 'Kontakt | UJ Studio Norge',
+      pageDescription: 'Ta kontakt med UJ Studio Norge — book en bryllupsfotografering, filmproduksjon, motefilm, reklameproduksjon eller digital skiltning.',
+      pageOgDescription: 'Ta kontakt med UJ Studio Norge — book en bryllupsfotografering, filmproduksjon, motefilm eller digital skiltning.',
       label: 'Ta kontakt',
       heading: 'Start et prosjekt',
       subtext: 'Enten det er et bryllup, en kampanje eller et AI-prosjekt — la oss skape noe bemerkelsesverdig sammen.',
