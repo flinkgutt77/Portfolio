@@ -158,12 +158,14 @@ Contact form submits to `/api/contact` which POSTs to n8n webhook.
 
 Channel: `@UmarJavedFilms` ("Umar Javed | UJ Studio", formerly @umarjaved77) — 9 videos shown on Films section:
 - Zain & Aisha, Wedding Film (`ZnOT30Wcikw`)
-- Highlights Reel (`yvAhdVdjIxY`) — main showreel
+- Kubra & Asad (`yvAhdVdjIxY`)
 - Winter Model Shoot (`1edAEaJDuBg`)
 - Studio Collection (`Gcu87eWkiBY`)
 - Fashion Editorial (`kjInN6INIUk`)
 - Studio Portrait Film (`zF92aN6_chc`)
-- Studio Lookbook (`9NzYzoN_lUY`)
+- Usman & Javeria, Wedding Film (`hNYCbRlGg5Y`)
+
+Main embed at the top of Films: Studio Lookbook (`9NzYzoN_lUY`)
 - Fashion Short (`6G0vSPFPrAM`)
 - Studio Reel (`cgd1sEv2XUo`)
 

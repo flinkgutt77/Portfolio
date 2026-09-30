@@ -5,12 +5,12 @@ const f = getDict().films
 
 const filmCards = [
   { title: 'Zain & Aisha', client: 'Wedding Film', year: '2018', videoId: 'ZnOT30Wcikw' },
-  { title: 'Highlights Reel', client: 'Showreel', year: '2021', videoId: 'yvAhdVdjIxY' },
+  { title: 'Kubra & Asad', client: 'Showreel', year: '2021', videoId: 'yvAhdVdjIxY' },
   { title: 'Winter Model Shoot', client: 'Fashion Film', year: '2021', videoId: '1edAEaJDuBg' },
   { title: 'Studio Collection', client: 'Fashion Film', year: '2021', videoId: 'Gcu87eWkiBY' },
   { title: 'Fashion Editorial', client: 'Fashion Film', year: '2021', videoId: 'kjInN6INIUk' },
   { title: 'Studio Portrait Film', client: 'Portrait Film', year: '2021', videoId: 'zF92aN6_chc' },
-  { title: 'Studio Lookbook', client: 'Fashion Film', year: '2021', videoId: '9NzYzoN_lUY' },
+  { title: 'Usman & Javeria', client: 'Wedding Film', year: '2018', videoId: 'hNYCbRlGg5Y' },
   { title: 'Fashion Short', client: 'Fashion Film', year: '2021', videoId: '6G0vSPFPrAM' },
   { title: 'Studio Reel', client: 'Fashion Film', year: '2021', videoId: 'cgd1sEv2XUo' },
 ]
@@ -36,8 +36,8 @@ export default function Films() {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/yvAhdVdjIxY?rel=0&color=white"
-            title="UJStudio Highlights Reel"
+            src="https://www.youtube.com/embed/9NzYzoN_lUY?rel=0&color=white"
+            title="UJ Studio: Studio Lookbook"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="w-full h-full"
