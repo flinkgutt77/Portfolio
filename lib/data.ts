@@ -43,7 +43,6 @@ export const galleryItems: GalleryItem[] = [
   { id: 'w3', src: '/Wedding/wedding-3.jpg', alt: 'Bridal portrait — wedding photography by UJ Studio Norge', category: 'weddings', width: 800, height: 800 },
   { id: 'w4', src: '/Wedding/wedding-4.jpg', alt: 'Wedding moments captured by UJ Studio Norge', category: 'weddings', width: 800, height: 600 },
   { id: 'w5', src: '/Wedding/wedding-5.jpg', alt: 'Romantic wedding photo — UJ Studio photography Norway', category: 'weddings', width: 800, height: 1000 },
-  { id: 'w6', src: '/Wedding/wedding-6.jpg', alt: 'Wedding photography — bride and groom by UJ Studio', category: 'weddings', width: 800, height: 600 },
   // Mehndi details (Farrukh & Tooba, 2024) — detail shots only, no people
   { id: 'wm1', src: '/Wedding/mehndi-detail-01.jpg', alt: "Mehndi detail: groom's hands with kangna bracelets — wedding photography by UJ Studio Norge", category: 'weddings', width: 1600, height: 1067 },
   { id: 'wm2', src: '/Wedding/mehndi-detail-02.jpg', alt: "Embroidered Masha'Allah sleeve on the groom's mehndi outfit — UJ Studio wedding details", category: 'weddings', width: 1600, height: 1171 },
