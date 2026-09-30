@@ -50,13 +50,7 @@ export const galleryItems: GalleryItem[] = [
   { id: 'wm3', src: '/Wedding/mehndi-detail-03.jpg', alt: "Hands playing the dholak at a mehndi celebration in Norway — UJ Studio", category: 'weddings', width: 1544, height: 1600 },
   { id: 'wm4', src: '/Wedding/mehndi-detail-04.jpg', alt: "Decorated dhol drums on a colourful rangoli — mehndi detail photography by UJ Studio", category: 'weddings', width: 1600, height: 1113 },
   { id: 'wm5', src: '/Wedding/mehndi-detail-05.jpg', alt: "Mehndi umbrellas and henna plates on a rangoli floor — wedding details by UJ Studio Norge", category: 'weddings', width: 1600, height: 1067 },
-  { id: 'wm6', src: '/Wedding/mehndi-detail-06.jpg', alt: "Turban and bindi props at a mehndi celebration — UJ Studio wedding photography", category: 'weddings', width: 1600, height: 1175 },
-  { id: 'wm7', src: '/Wedding/mehndi-detail-07.jpg', alt: "Mehndi stage with floral arch and rangoli — wedding decor photographed by UJ Studio", category: 'weddings', width: 1600, height: 1106 },
-  { id: 'wm8', src: '/Wedding/mehndi-detail-08.jpg', alt: "Traditional sweets at a mehndi — wedding detail photography by UJ Studio Norge", category: 'weddings', width: 1600, height: 1067 },
   { id: 'wm9', src: '/Wedding/mehndi-detail-09.jpg', alt: "Candle wrapped in bangles on a pink table runner — mehndi decor by UJ Studio", category: 'weddings', width: 1600, height: 1146 },
-  { id: 'wm10', src: '/Wedding/mehndi-detail-10.jpg', alt: "Fresh flower garlands for the mehndi — wedding details by UJ Studio Norge", category: 'weddings', width: 1600, height: 1172 },
-  { id: 'wm11', src: '/Wedding/mehndi-detail-11.jpg', alt: "Candle, roses and mirror tray — mehndi table decor photographed by UJ Studio", category: 'weddings', width: 1600, height: 1132 },
-  { id: 'wm12', src: '/Wedding/mehndi-detail-12.jpg', alt: "Henna plate and decorated pots for the mehndi ceremony — UJ Studio wedding details", category: 'weddings', width: 1600, height: 1067 },
   // Birthdays
   { id: 'b1', src: '/Birthday/birthday-1.jpg', alt: 'Birthday photography Norway — celebration moment by UJ Studio', category: 'birthdays', width: 800, height: 600 },
   { id: 'b2', src: '/Birthday/birthday-2.jpg', alt: 'Birthday portrait photography by UJ Studio Norge', category: 'birthdays', width: 800, height: 1000 },
