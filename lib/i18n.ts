@@ -131,6 +131,15 @@ const dict = {
         'Cinematic Short': 'Cinematic Short',
         'Behind the Scenes': 'Behind the Scenes',
         'Wedding Film': 'Wedding Film',
+        'Engagement Film': 'Engagement Film',
+        'Video Song Teaser': 'Video Song Teaser',
+        'Trailer': 'Trailer',
+      },
+      filters: {
+        all: 'All',
+        fashion: 'Fashion',
+        wedding: 'Wedding',
+        teasers: 'Teasers & Trailers',
       },
     },
 
@@ -326,6 +335,15 @@ const dict = {
         'Cinematic Short': 'Kinematografisk kortfilm',
         'Behind the Scenes': 'Bak kulissene',
         'Wedding Film': 'Bryllupsfilm',
+        'Engagement Film': 'Forlovelsesfilm',
+        'Video Song Teaser': 'Musikkvideo-teaser',
+        'Trailer': 'Trailer',
+      },
+      filters: {
+        all: 'Alle',
+        fashion: 'Mote',
+        wedding: 'Bryllup',
+        teasers: 'Teasere og trailere',
       },
     },
 

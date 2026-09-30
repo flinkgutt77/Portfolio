@@ -1,21 +1,17 @@
+'use client'
+
+import { useState } from 'react'
 import FadeIn from '@/components/ui/FadeIn'
 import { getDict } from '@/lib/i18n'
+import { films, filmCategories, featuredFilmId } from '@/lib/data'
 
 const f = getDict().films
 
-const filmCards = [
-  { title: 'Zain & Aisha', client: 'Wedding Film', year: '2018', videoId: 'ZnOT30Wcikw' },
-  { title: 'Kubra & Asad', client: 'Showreel', year: '2021', videoId: 'yvAhdVdjIxY' },
-  { title: 'Winter Model Shoot', client: 'Fashion Film', year: '2021', videoId: '1edAEaJDuBg' },
-  { title: 'Studio Collection', client: 'Fashion Film', year: '2021', videoId: 'Gcu87eWkiBY' },
-  { title: 'Fashion Editorial', client: 'Fashion Film', year: '2021', videoId: 'kjInN6INIUk' },
-  { title: 'Studio Portrait Film', client: 'Portrait Film', year: '2021', videoId: 'zF92aN6_chc' },
-  { title: 'Usman & Javeria', client: 'Wedding Film', year: '2018', videoId: 'hNYCbRlGg5Y' },
-  { title: 'Fashion Short', client: 'Fashion Film', year: '2021', videoId: '6G0vSPFPrAM' },
-  { title: 'Studio Reel', client: 'Fashion Film', year: '2021', videoId: 'cgd1sEv2XUo' },
-]
 
 export default function Films() {
+  const [activeFilter, setActiveFilter] = useState<(typeof filmCategories)[number]>('all')
+  const filtered = activeFilter === 'all' ? films : films.filter(film => film.category === activeFilter)
+
   return (
     <section id="films" className="bg-surface py-24 px-6">
       {/* Header */}
@@ -36,7 +32,7 @@ export default function Films() {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/9NzYzoN_lUY?rel=0&color=white"
+            src={`https://www.youtube.com/embed/${featuredFilmId}?rel=0&color=white`}
             title="UJ Studio: Studio Lookbook"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -45,9 +41,26 @@ export default function Films() {
         </div>
       </div>
 
+      {/* Filter Tabs — same style as the photo gallery, films only */}
+      <div className="flex flex-row gap-2 flex-wrap justify-center mb-10">
+        {filmCategories.map(category => (
+          <button
+            key={category}
+            onClick={() => setActiveFilter(category)}
+            className={
+              activeFilter === category
+                ? 'bg-gold text-background text-xs px-5 py-2 tracking-widest uppercase'
+                : 'border border-border text-text-muted hover:border-gold hover:text-gold text-xs px-5 py-2 tracking-widest uppercase transition-colors duration-200'
+            }
+          >
+            {f.filters[category]}
+          </button>
+        ))}
+      </div>
+
       {/* Film Cards — all link to YouTube */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filmCards.map((card) => (
+        {filtered.map((card) => (
           <a
             key={card.videoId}
             href={`https://youtube.com/watch?v=${card.videoId}`}
