@@ -66,8 +66,9 @@ const dict = {
     about: {
       label: 'About Me',
       role: 'Photographer · Cinematographer · Creative Director',
+      formerly: 'Formerly Pixelsrama Production',
       bio1: 'Based in Norway, I am a professional photographer and cinematographer with over a decade of experience creating visual stories that move, inspire, and endure. From the quiet emotion of a wedding ceremony to the bold energy of a commercial production — every frame I capture is crafted with intention, care, and a deep passion for the art of visual storytelling.',
-      bio2: 'My work spans weddings, family portraits, fashion editorials, advertisement photography and films, and digital signage. Whatever the brief, I bring the same commitment to every project: cinematic quality, creative vision, and an experience that feels effortless for my clients from start to finish. You may also know my earlier work under the name Pixelsrama Production — the same eye, now as UJ Studio.',
+      bio2: 'My work spans weddings, family portraits, fashion editorials, advertisement photography and films, and digital signage. Whatever the brief, I bring the same commitment to every project: cinematic quality, creative vision, and an experience that feels effortless for my clients from start to finish.',
       bio3: 'I believe the best images are not just taken — they are felt. Let us create something remarkable together.',
       stats: [
         { value: '10+', label: 'Years of Experience' },
@@ -275,8 +276,9 @@ const dict = {
     about: {
       label: 'Om meg',
       role: 'Fotograf · Filmskaper · Kreativ direktør',
+      formerly: 'Tidligere Pixelsrama Production',
       bio1: 'Basert i Norge er jeg en profesjonell fotograf og filmskaper med over ti års erfaring med å skape visuelle historier som beveger, inspirerer og varer. Fra den stille stemningen ved en bryllupsseremoni til den dristige energien i en kommersiell produksjon — hvert bilde jeg tar er skapt med intensjon, omsorg og en dyp lidenskap for kunsten av visuell historiefortelling.',
-      bio2: 'Arbeidet mitt spenner over bryllup, familieportretter, motebilder, reklame­fotografi og film, samt digital skiltning. Uansett oppdraget bringer jeg det samme engasjementet til hvert prosjekt: filmisk kvalitet, kreativ visjon og en opplevelse som føles uanstrengt for mine kunder fra start til slutt. Du kjenner kanskje også mitt tidligere arbeid under navnet Pixelsrama Production — samme blikk, nå som UJ Studio.',
+      bio2: 'Arbeidet mitt spenner over bryllup, familieportretter, motebilder, reklame­fotografi og film, samt digital skiltning. Uansett oppdraget bringer jeg det samme engasjementet til hvert prosjekt: filmisk kvalitet, kreativ visjon og en opplevelse som føles uanstrengt for mine kunder fra start til slutt.',
       bio3: 'Jeg tror de beste bildene ikke bare tas — de føles. La oss skape noe bemerkelsesverdig sammen.',
       stats: [
         { value: '10+', label: 'Års erfaring' },
