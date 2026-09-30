@@ -150,13 +150,13 @@ Contact form submits to `/api/contact` which POSTs to n8n webhook.
 |---|---|
 | Instagram | https://instagram.com/ujstudionorge |
 | Facebook | https://www.facebook.com/profile.php?id=61567685248522 |
-| YouTube | https://youtube.com/@umarjaved77 |
+| YouTube | https://youtube.com/@UmarJavedFilms |
 
 ---
 
 ## YouTube Videos Featured
 
-Channel: `@umarjaved77` — 9 videos shown on Films section:
+Channel: `@UmarJavedFilms` ("Umar Javed | UJ Studio", formerly @umarjaved77) — 9 videos shown on Films section:
 - DK Logo Animation (`1edAEaJDuBg`)
 - Highlights Reel (`yvAhdVdjIxY`) — main showreel
 - Fashion Studio Shoot (`a3BLkr_vJAg`)

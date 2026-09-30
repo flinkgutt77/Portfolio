@@ -88,7 +88,7 @@ export default function Films() {
       {/* YouTube Channel Link */}
       <div className="text-center mt-12">
         <a
-          href="https://youtube.com/@umarjaved77"
+          href="https://youtube.com/@UmarJavedFilms"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 border border-border text-text-muted hover:border-gold hover:text-gold px-8 py-3 transition-all duration-300 text-sm tracking-widest uppercase"
