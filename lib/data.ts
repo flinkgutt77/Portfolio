@@ -72,6 +72,40 @@ export const galleryItems: GalleryItem[] = [
 // Gallery filter categories
 export const galleryCategories = ['All', 'Weddings', 'Birthdays', 'Portraits', 'Fashion', 'Ads', 'Signage']
 
+// Films (YouTube) — shown in the Films section with their own filter tabs,
+// separate from the photo gallery. `client` keys map to films.clientLabels in lib/i18n.ts.
+export type FilmCategory = 'fashion' | 'wedding' | 'teasers'
+export type Film = {
+  title: string
+  client: string
+  year: string
+  videoId: string
+  category: FilmCategory
+}
+
+export const filmCategories: ('all' | FilmCategory)[] = ['all', 'fashion', 'wedding', 'teasers']
+
+// Main embed at the top of the Films section (not repeated in the grid)
+export const featuredFilmId = '9NzYzoN_lUY' // Studio Lookbook
+
+export const films: Film[] = [
+  // Fashion
+  { title: 'Winter Model Shoot', client: 'Fashion Film', year: '2021', videoId: '1edAEaJDuBg', category: 'fashion' },
+  { title: 'Studio Collection', client: 'Fashion Film', year: '2021', videoId: 'Gcu87eWkiBY', category: 'fashion' },
+  { title: 'Fashion Editorial', client: 'Fashion Film', year: '2021', videoId: 'kjInN6INIUk', category: 'fashion' },
+  { title: 'Studio Portrait Film', client: 'Portrait Film', year: '2021', videoId: 'zF92aN6_chc', category: 'fashion' },
+  { title: 'Fashion Short', client: 'Fashion Film', year: '2021', videoId: '6G0vSPFPrAM', category: 'fashion' },
+  { title: 'Studio Reel', client: 'Fashion Film', year: '2021', videoId: 'cgd1sEv2XUo', category: 'fashion' },
+  // Wedding
+  { title: 'Zain & Aisha', client: 'Wedding Film', year: '2018', videoId: 'ZnOT30Wcikw', category: 'wedding' },
+  { title: 'Usman & Javeria', client: 'Wedding Film', year: '2018', videoId: 'hNYCbRlGg5Y', category: 'wedding' },
+  { title: 'Shilpu & Kim', client: 'Engagement Film', year: '2018', videoId: '70khkeJImzo', category: 'wedding' },
+  { title: "Bilal's Post Wedding Shoot", client: 'Wedding Film', year: '2018', videoId: 'kjyw4ff04O0', category: 'wedding' },
+  // Teasers & trailers
+  { title: 'Kubra & Asad', client: 'Video Song Teaser', year: '2021', videoId: 'yvAhdVdjIxY', category: 'teasers' },
+  { title: 'NDMVD Novel', client: 'Trailer', year: '2018', videoId: 'sg9oJK9pYz8', category: 'teasers' },
+]
+
 // Dedicated per-category portfolio pages — id matches `services` ids and
 // lib/i18n.ts's `portfolioPages` dict; category matches galleryItems' `category`
 // field for filtering. slug is locale-specific (SEO landing pages, e.g.

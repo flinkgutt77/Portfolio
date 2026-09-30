@@ -156,18 +156,10 @@ Contact form submits to `/api/contact` which POSTs to n8n webhook.
 
 ## YouTube Videos Featured
 
-Channel: `@UmarJavedFilms` ("Umar Javed | UJ Studio", formerly @umarjaved77) — 9 videos shown on Films section:
-- Zain & Aisha, Wedding Film (`ZnOT30Wcikw`)
-- Kubra & Asad (`yvAhdVdjIxY`)
-- Winter Model Shoot (`1edAEaJDuBg`)
-- Studio Collection (`Gcu87eWkiBY`)
-- Fashion Editorial (`kjInN6INIUk`)
-- Studio Portrait Film (`zF92aN6_chc`)
-- Usman & Javeria, Wedding Film (`hNYCbRlGg5Y`)
-
-Main embed at the top of Films: Studio Lookbook (`9NzYzoN_lUY`)
-- Fashion Short (`6G0vSPFPrAM`)
-- Studio Reel (`cgd1sEv2XUo`)
+Channel: `@UmarJavedFilms` ("Umar Javed | UJ Studio"). Films live in `lib/data.ts` (`films`, `filmCategories`,
+`featuredFilmId`) and are shown in the Films section with their own filter tabs (All · Fashion · Wedding ·
+Teasers & Trailers), separate from the photo gallery. Main embed at the top: Studio Lookbook (`9NzYzoN_lUY`).
+To add a film: add an entry to `films` with its YouTube id and category.
 
 ---
 
