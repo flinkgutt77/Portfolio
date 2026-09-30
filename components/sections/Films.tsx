@@ -6,13 +6,13 @@ const f = getDict().films
 const filmCards = [
   { title: 'Zain & Aisha', client: 'Wedding Film', year: '2018', videoId: 'ZnOT30Wcikw' },
   { title: 'Highlights Reel', client: 'Showreel', year: '2021', videoId: 'yvAhdVdjIxY' },
-  { title: 'Usman & Javeria', client: 'Wedding Film', year: '2018', videoId: 'hNYCbRlGg5Y' },
+  { title: 'Winter Model Shoot', client: 'Fashion Film', year: '2021', videoId: '1edAEaJDuBg' },
   { title: 'Studio Collection', client: 'Fashion Film', year: '2021', videoId: 'Gcu87eWkiBY' },
   { title: 'Fashion Editorial', client: 'Fashion Film', year: '2021', videoId: 'kjInN6INIUk' },
   { title: 'Studio Portrait Film', client: 'Portrait Film', year: '2021', videoId: 'zF92aN6_chc' },
   { title: 'Studio Lookbook', client: 'Fashion Film', year: '2021', videoId: '9NzYzoN_lUY' },
-  { title: 'Hage', client: 'Cinematic Short', year: '2021', videoId: '6G0vSPFPrAM' },
-  { title: 'Studio Reel', client: 'Behind the Scenes', year: '2021', videoId: 'cgd1sEv2XUo' },
+  { title: 'Fashion Short', client: 'Fashion Film', year: '2021', videoId: '6G0vSPFPrAM' },
+  { title: 'Studio Reel', client: 'Fashion Film', year: '2021', videoId: 'cgd1sEv2XUo' },
 ]
 
 export default function Films() {
