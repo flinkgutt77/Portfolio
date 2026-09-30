@@ -4,9 +4,9 @@ import { getDict } from '@/lib/i18n'
 const f = getDict().films
 
 const filmCards = [
-  { title: 'DK Logo Animation', client: 'Brand Film', year: '2025', videoId: '1edAEaJDuBg' },
+  { title: 'Zain & Aisha', client: 'Wedding Film', year: '2018', videoId: 'ZnOT30Wcikw' },
   { title: 'Highlights Reel', client: 'Showreel', year: '2021', videoId: 'yvAhdVdjIxY' },
-  { title: 'Fashion Studio Shoot', client: 'Fashion Film', year: '2021', videoId: 'a3BLkr_vJAg' },
+  { title: 'Usman & Javeria', client: 'Wedding Film', year: '2018', videoId: 'hNYCbRlGg5Y' },
   { title: 'Studio Collection', client: 'Fashion Film', year: '2021', videoId: 'Gcu87eWkiBY' },
   { title: 'Fashion Editorial', client: 'Fashion Film', year: '2021', videoId: 'kjInN6INIUk' },
   { title: 'Studio Portrait Film', client: 'Portrait Film', year: '2021', videoId: 'zF92aN6_chc' },

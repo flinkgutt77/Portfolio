@@ -157,9 +157,9 @@ Contact form submits to `/api/contact` which POSTs to n8n webhook.
 ## YouTube Videos Featured
 
 Channel: `@UmarJavedFilms` ("Umar Javed | UJ Studio", formerly @umarjaved77) — 9 videos shown on Films section:
-- DK Logo Animation (`1edAEaJDuBg`)
+- Zain & Aisha, Wedding Film (`ZnOT30Wcikw`)
 - Highlights Reel (`yvAhdVdjIxY`) — main showreel
-- Fashion Studio Shoot (`a3BLkr_vJAg`)
+- Usman & Javeria, Wedding Film (`hNYCbRlGg5Y`)
 - Studio Collection (`Gcu87eWkiBY`)
 - Fashion Editorial (`kjInN6INIUk`)
 - Studio Portrait Film (`zF92aN6_chc`)

@@ -130,6 +130,7 @@ const dict = {
         'Portrait Film': 'Portrait Film',
         'Cinematic Short': 'Cinematic Short',
         'Behind the Scenes': 'Behind the Scenes',
+        'Wedding Film': 'Wedding Film',
       },
     },
 
@@ -324,6 +325,7 @@ const dict = {
         'Portrait Film': 'Portrettfilm',
         'Cinematic Short': 'Kinematografisk kortfilm',
         'Behind the Scenes': 'Bak kulissene',
+        'Wedding Film': 'Bryllupsfilm',
       },
     },
 
