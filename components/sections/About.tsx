@@ -31,8 +31,11 @@ export default function About() {
             <h2 className="font-serif text-4xl md:text-5xl text-text-primary mb-2">
               Umar Javed
             </h2>
-            <p className="text-text-muted text-sm tracking-widest mb-8">
+            <p className="text-text-muted text-sm tracking-widest mb-2">
               {a.role}
+            </p>
+            <p className="text-gold text-xs italic tracking-wider mb-8">
+              {a.formerly}
             </p>
             <div className="w-16 h-px bg-gold mb-8" />
 
