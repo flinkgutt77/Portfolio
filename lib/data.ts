@@ -56,15 +56,15 @@ export const galleryItems: GalleryItem[] = [
   { id: 'b3', src: '/Birthday/birthday-3.jpg', alt: 'Birthday event photography Norway — UJ Studio', category: 'birthdays', width: 800, height: 600 },
   // Portraits
   { id: 'p1', src: '/Portrait/portrait-1.jpg', alt: 'Professional portrait photography Norway — UJ Studio', category: 'portraits', width: 800, height: 1000 },
-  { id: 'p2', src: '/Portrait/portrait-2.jpg', alt: 'Studio portrait photography by UJ Studio Norge', category: 'portraits', width: 800, height: 600 },
-  { id: 'p3', src: '/Portrait/portrait-3.jpg', alt: 'Portrait session Norway — UJ Studio photography', category: 'portraits', width: 800, height: 1000 },
+  { id: 'p2', src: '/Portrait/portrait-golden-hour.jpg', alt: 'Golden hour portrait photography in Norway — UJ Studio', category: 'portraits', width: 1067, height: 1600 },
+  { id: 'p3', src: '/Portrait/portrait-night.jpg', alt: 'Night portrait photography Norway — UJ Studio Norge', category: 'portraits', width: 1067, height: 1600 },
   { id: 'p4', src: '/Portrait/portrait-4.jpg', alt: 'Professional headshot photography — UJ Studio Norge', category: 'portraits', width: 800, height: 600 },
   { id: 'p5', src: '/Portrait/portrait-5.jpg', alt: 'Creative portrait photography Norway by UJ Studio', category: 'portraits', width: 800, height: 800 },
   // Fashion
   { id: 'fa1', src: '/Fashion/fashion-1.jpg', alt: 'Fashion photography Norway — editorial by UJ Studio', category: 'fashion', width: 800, height: 1000 },
   { id: 'fa2', src: '/Fashion/fashion-2.jpg', alt: 'Fashion editorial photography by UJ Studio Norge', category: 'fashion', width: 800, height: 600 },
-  { id: 'fa3', src: '/Fashion/fashion-3.jpg', alt: 'Bridal fashion photography Norway — UJ Studio', category: 'fashion', width: 800, height: 1000 },
-  { id: 'fa4', src: '/Fashion/fashion-4.jpg', alt: 'Fashion lookbook photography — UJ Studio Norge', category: 'fashion', width: 800, height: 600 },
+  { id: 'fa3', src: '/Fashion/fashion-studio-dupatta.jpg', alt: 'Studio fashion photography Norway — flowing dupatta, UJ Studio', category: 'fashion', width: 810, height: 1200 },
+  { id: 'fa4', src: '/Fashion/fashion-studio-red-dress.jpg', alt: 'Red embroidered dress in warm studio light — fashion photography by UJ Studio Norge', category: 'fashion', width: 800, height: 1200 },
   { id: 'fa5', src: '/Fashion/fashion-5.jpg', alt: 'Fashion portrait photography Norway by UJ Studio', category: 'fashion', width: 800, height: 800 },
   // Ads
   { id: 'a1', src: '/Advertisment/ad-1.jpg', alt: 'Commercial advertisement photography Norway — UJ Studio', category: 'ads', width: 800, height: 600 },
