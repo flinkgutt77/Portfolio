@@ -56,7 +56,7 @@ const jsonLd = {
   sameAs: [
     'https://instagram.com/ujstudionorge',
     'https://www.facebook.com/profile.php?id=61567685248522',
-    'https://youtube.com/@umarjaved77',
+    'https://youtube.com/@UmarJavedFilms',
   ],
   serviceType: site.serviceTypes,
 }
