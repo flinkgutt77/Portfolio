@@ -43,6 +43,17 @@ export const galleryItems: GalleryItem[] = [
   { id: 'w3', src: '/Wedding/wedding-3.jpg', alt: 'Bridal portrait — wedding photography by UJ Studio Norge', category: 'weddings', width: 800, height: 800 },
   { id: 'w4', src: '/Wedding/wedding-4.jpg', alt: 'Wedding moments captured by UJ Studio Norge', category: 'weddings', width: 800, height: 600 },
   { id: 'w5', src: '/Wedding/wedding-5.jpg', alt: 'Romantic wedding photo — UJ Studio photography Norway', category: 'weddings', width: 800, height: 1000 },
+  // Sabah & Sheraz (2020) — couple consented to publication
+  { id: 'ws1', src: '/Wedding/sabah-sheraz-01.jpg', alt: "Bride and groom in the snow — winter wedding photography in Norway by UJ Studio", category: 'weddings', width: 1067, height: 1600 },
+  { id: 'ws2', src: '/Wedding/sabah-sheraz-02.jpg', alt: "Backlit moment between bride and groom — wedding photography by UJ Studio Norge", category: 'weddings', width: 1600, height: 944 },
+  { id: 'ws3', src: '/Wedding/sabah-sheraz-03.jpg', alt: "Bride and groom on a staircase — elegant wedding portrait by UJ Studio", category: 'weddings', width: 1186, height: 1600 },
+  { id: 'ws4', src: '/Wedding/sabah-sheraz-04.jpg', alt: "Groom kisses the bride's forehead — romantic wedding photography Norway", category: 'weddings', width: 1153, height: 1600 },
+  { id: 'ws5', src: '/Wedding/sabah-sheraz-05.jpg', alt: "Silhouette of the couple against purple light — creative wedding photography by UJ Studio", category: 'weddings', width: 1291, height: 1600 },
+  { id: 'ws6', src: '/Wedding/sabah-sheraz-06.jpg', alt: "Bride and groom with warm bokeh lights — evening wedding portrait by UJ Studio Norge", category: 'weddings', width: 1355, height: 1600 },
+  { id: 'ws7', src: '/Wedding/sabah-sheraz-07.jpg', alt: "Bride with bouquet in warm light — bridal portrait photography Norway", category: 'weddings', width: 1067, height: 1600 },
+  { id: 'ws8', src: '/Wedding/sabah-sheraz-08.jpg', alt: "Bridal portrait against a blue wall — wedding photography by UJ Studio", category: 'weddings', width: 1137, height: 1600 },
+  { id: 'ws9', src: '/Wedding/sabah-sheraz-09.jpg', alt: "Bride under her veil — intimate bridal portrait by UJ Studio Norge", category: 'weddings', width: 1600, height: 1067 },
+  { id: 'ws10', src: '/Wedding/sabah-sheraz-10.jpg', alt: "Wedding rings in white roses — wedding detail photography Norway", category: 'weddings', width: 1600, height: 1043 },
   // Mehndi details (Farrukh & Tooba, 2024) — detail shots only, no people
   { id: 'wm1', src: '/Wedding/mehndi-detail-01.jpg', alt: "Mehndi detail: groom's hands with kangna bracelets — wedding photography by UJ Studio Norge", category: 'weddings', width: 1600, height: 1067 },
   { id: 'wm2', src: '/Wedding/mehndi-detail-02.jpg', alt: "Embroidered Masha'Allah sleeve on the groom's mehndi outfit — UJ Studio wedding details", category: 'weddings', width: 1600, height: 1171 },
