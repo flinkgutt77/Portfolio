@@ -7,7 +7,6 @@ import Gallery from '@/components/sections/Gallery'
 import Films from '@/components/sections/Films'
 import Signage from '@/components/sections/Signage'
 import About from '@/components/sections/About'
-import Testimonials from '@/components/sections/Testimonials'
 import Contact from '@/components/sections/Contact'
 import { hreflangAlternates, siteUrl } from '@/lib/i18n'
 
@@ -29,7 +28,7 @@ export default function Home() {
         <Films />
         <Signage />
         <About />
-        <Testimonials />
+        {/* Testimonials hidden until real client reviews are collected */}
         <Contact />
       </main>
       <Footer />
