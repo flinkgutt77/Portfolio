@@ -163,4 +163,5 @@ export const socialLinks = [
   { label: 'Instagram', href: 'https://instagram.com/ujstudionorge', icon: 'Instagram' },
   { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61567685248522', icon: 'Facebook' },
   { label: 'YouTube', href: 'https://youtube.com/@UmarJavedFilms', icon: 'Youtube' },
+  { label: 'TikTok', href: 'https://www.tiktok.com/@ujstudionorway', icon: 'Tiktok' },
 ]
